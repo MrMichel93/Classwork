@@ -13,7 +13,7 @@ Complete this program to learn about working with futures.
 """
 
 import time
-from concurrent.futures import ThreadPoolExecutor, TimeoutError, wait, FIRST_COMPLETED, ALL_COMPLETED
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED, ALL_COMPLETED
 
 # TODO 1: Create a function 'slow_task' that:
 # - Takes task_id and duration parameters
