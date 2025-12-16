@@ -4,7 +4,7 @@ A collection of mini-assignments and programs for students to do quickly in clas
 
 ## 📚 Overview
 
-This repository contains **24 mini-programs** organized into 6 major topics, each with at least 4 practice programs. Each program includes:
+This repository contains **60 mini-programs** organized into 15 major topics, each with at least 4 practice programs. Each program includes:
 - Clear learning objectives
 - Step-by-step TODO instructions
 - Extensive comments to guide students
@@ -162,6 +162,231 @@ Work with Python's most versatile data structure - lists.
   - Create new lists from existing ones
   - Perform calculations on list data
 
+### 7. Tuples, Sets and Dictionaries
+**Location:** `07_tuples_sets_dictionaries/`
+
+Master Python's essential data structures beyond lists.
+
+- **01_tuple_basics.py** - Tuple creation and immutability
+  - Create and access tuple elements
+  - Understand tuple immutability
+  - Unpack tuples and work with tuple methods
+
+- **02_set_operations.py** - Set operations and uniqueness
+  - Create sets and understand uniqueness
+  - Perform union, intersection, and difference operations
+  - Add and remove elements from sets
+
+- **03_dictionary_basics.py** - Dictionary fundamentals
+  - Create dictionaries with key-value pairs
+  - Access and modify dictionary values
+  - Work with nested dictionaries
+
+- **04_dict_methods.py** - Advanced dictionary operations
+  - Use dictionary methods (keys, values, items)
+  - Iterate through dictionaries
+  - Update and manipulate dictionary data
+
+### 8. Exceptions & Files
+**Location:** `08_exceptions_files/`
+
+Learn to handle errors gracefully and work with files.
+
+- **01_exception_handling.py** - Exception handling basics
+  - Use try-except blocks
+  - Handle specific exception types
+  - Implement finally clause for cleanup
+
+- **02_file_reading.py** - Reading files in Python
+  - Open and read files with context managers
+  - Read files line by line
+  - Handle file-related exceptions
+
+- **03_file_writing.py** - Writing data to files
+  - Write and append to files
+  - Use different file modes
+  - Write lists and dictionaries to files
+
+- **04_json_files.py** - Working with JSON data
+  - Parse and generate JSON
+  - Read and write JSON files
+  - Handle JSON exceptions
+
+### 9. Basic OOP
+**Location:** `09_basic_oop/`
+
+Introduction to Object-Oriented Programming concepts.
+
+- **01_simple_class.py** - Creating simple classes
+  - Define classes and create instances
+  - Use __init__ method for initialization
+  - Access and modify object attributes
+
+- **02_class_attributes.py** - Class vs instance attributes
+  - Understand the difference between class and instance attributes
+  - Share data across all instances
+  - Track class-level information
+
+- **03_class_methods.py** - Methods and behavior
+  - Define methods inside classes
+  - Use the self parameter
+  - Return values from methods
+
+- **04_multiple_objects.py** - Working with multiple objects
+  - Create and manage multiple instances
+  - Store objects in lists
+  - Iterate through and compare objects
+
+### 10. Intermediate OOP
+**Location:** `10_intermediate_oop/`
+
+Advanced OOP concepts for code reuse and organization.
+
+- **01_inheritance.py** - Class inheritance basics
+  - Create parent and child classes
+  - Inherit attributes and methods
+  - Extend parent class functionality
+
+- **02_method_overriding.py** - Overriding parent methods
+  - Override methods in child classes
+  - Customize inherited behavior
+  - Create specialized implementations
+
+- **03_super_function.py** - Using super()
+  - Call parent class methods
+  - Extend parent functionality
+  - Work with multi-level inheritance
+
+- **04_multiple_inheritance.py** - Multiple inheritance
+  - Inherit from multiple parent classes
+  - Combine functionality from different sources
+  - Understand method resolution order
+
+### 11. Advanced OOP
+**Location:** `11_advanced_oop/`
+
+Professional OOP patterns and techniques.
+
+- **01_properties.py** - Properties and getters/setters
+  - Use @property decorator
+  - Create computed properties
+  - Validate attribute access
+
+- **02_class_methods_static.py** - Class and static methods
+  - Use @classmethod decorator
+  - Use @staticmethod decorator
+  - Know when to use each method type
+
+- **03_magic_methods.py** - Special methods (dunder methods)
+  - Override __str__ and __repr__
+  - Implement comparison operators
+  - Overload arithmetic operators
+
+- **04_abstract_classes.py** - Abstract base classes
+  - Use ABC and @abstractmethod
+  - Create interfaces
+  - Enforce method implementation
+
+### 12. Concurrent and Parallel Programming
+**Location:** `12_concurrent_parallel/`
+
+Learn to write concurrent and parallel code for better performance.
+
+- **01_concurrent_basics.py** - Concurrency fundamentals
+  - Understand concurrent vs parallel execution
+  - Use ThreadPoolExecutor
+  - Work with Future objects
+
+- **02_futures.py** - Working with futures
+  - Check future status
+  - Add callbacks to futures
+  - Handle timeouts and cancellation
+
+- **03_process_pool.py** - Process-based parallelism
+  - Use ProcessPoolExecutor for CPU-bound tasks
+  - Compare threads vs processes
+  - Parallelize computational work
+
+- **04_thread_pool.py** - Thread pool management
+  - Master ThreadPoolExecutor
+  - Handle shared resources
+  - Manage thread pool size
+
+### 13. Threading
+**Location:** `13_threading/`
+
+Deep dive into Python threading for concurrent execution.
+
+- **01_thread_basics.py** - Threading fundamentals
+  - Create and start threads
+  - Pass arguments to threads
+  - Use join() to wait for completion
+
+- **02_thread_synchronization.py** - Synchronizing threads
+  - Understand race conditions
+  - Use locks to prevent race conditions
+  - Work with semaphores
+
+- **03_thread_locks.py** - Locks and RLocks
+  - Master different lock types
+  - Use reentrant locks
+  - Implement timeout for locks
+
+- **04_thread_communication.py** - Thread communication
+  - Use Events for signaling
+  - Implement producer-consumer with Queue
+  - Use Condition variables
+
+### 14. Multiprocessing
+**Location:** `14_multiprocessing/`
+
+Leverage multiple CPU cores with multiprocessing.
+
+- **01_process_basics.py** - Multiprocessing fundamentals
+  - Create and manage processes
+  - Understand process vs thread
+  - Pass arguments to processes
+
+- **02_process_pool.py** - Process pools
+  - Use Pool for parallel execution
+  - Apply functions to multiple inputs
+  - Manage worker processes
+
+- **03_process_communication.py** - Inter-process communication
+  - Use Queue for process communication
+  - Use Pipe for bidirectional communication
+  - Implement producer-consumer pattern
+
+- **04_shared_memory.py** - Shared memory
+  - Use Value and Array for shared memory
+  - Use Manager for shared objects
+  - Synchronize access to shared memory
+
+### 15. Asyncio
+**Location:** `15_asyncio/`
+
+Master asynchronous programming with asyncio.
+
+- **01_async_basics.py** - Asyncio fundamentals
+  - Create coroutines with async/await
+  - Run coroutines with asyncio.run()
+  - Understand the event loop
+
+- **02_async_await.py** - Async/await patterns
+  - Use asyncio.create_task()
+  - Run multiple coroutines concurrently
+  - Master async/await syntax
+
+- **03_async_tasks.py** - Managing async tasks
+  - Create and manage tasks
+  - Cancel and timeout tasks
+  - Monitor task status
+
+- **04_async_gathering.py** - Gathering results
+  - Use asyncio.gather()
+  - Handle exceptions in concurrent operations
+  - Coordinate multiple async operations
+
 ## 🚀 How to Use This Repository
 
 ### For Students:
@@ -182,9 +407,20 @@ Work with Python's most versatile data structure - lists.
 cd Classwork
 
 # Run any program with Python
+# Beginner topics:
 python 01_variables_expressions_statements/01_calculator.py
 python 02_conditionals/01_grade_checker.py
 python 03_functions/01_basic_functions.py
+
+# Intermediate topics:
+python 07_tuples_sets_dictionaries/01_tuple_basics.py
+python 08_exceptions_files/01_exception_handling.py
+python 09_basic_oop/01_simple_class.py
+
+# Advanced topics:
+python 12_concurrent_parallel/01_concurrent_basics.py
+python 13_threading/01_thread_basics.py
+python 15_asyncio/01_async_basics.py
 # ... and so on
 ```
 
@@ -199,7 +435,7 @@ python 03_functions/01_basic_functions.py
 
 ## 📖 Learning Path
 
-Recommended order for complete beginners:
+### For Complete Beginners (Topics 1-6):
 
 1. **Variables, Expressions and Statements** (Foundation)
 2. **Conditionals** (Decision Making)
@@ -208,7 +444,22 @@ Recommended order for complete beginners:
 5. **Lists** (Data Collections)
 6. **Functions** (Code Organization)
 
-Note: You can adjust this order based on your curriculum.
+### For Intermediate Students (Topics 7-11):
+
+7. **Tuples, Sets and Dictionaries** (Advanced Data Structures)
+8. **Exceptions & Files** (Error Handling & I/O)
+9. **Basic OOP** (Object-Oriented Basics)
+10. **Intermediate OOP** (Inheritance & Polymorphism)
+11. **Advanced OOP** (Professional OOP Patterns)
+
+### For Advanced Students (Topics 12-15):
+
+12. **Concurrent and Parallel Programming** (Performance Optimization)
+13. **Threading** (Concurrent Execution)
+14. **Multiprocessing** (Parallel Execution)
+15. **Asyncio** (Asynchronous Programming)
+
+Note: You can adjust this order based on your curriculum and student needs.
 
 ## 🎯 Program Difficulty
 
