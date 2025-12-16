@@ -4,11 +4,20 @@ A collection of mini-assignments and programs for students to do quickly in clas
 
 ## 📚 Overview
 
-This repository contains **60 mini-programs** organized into 15 major topics, each with at least 4 practice programs. Each program includes:
+This repository contains **90 mini-programs** organized into 15 major topics, each with 6 practice programs. Each program includes:
 - Clear learning objectives
 - Step-by-step TODO instructions
 - Extensive comments to guide students
 - Bonus challenges for advanced practice
+- Progressive difficulty from simple to challenging
+
+### ✨ What's New
+Each topic now includes **6 programs** instead of 4, with a carefully designed difficulty progression:
+- **Programs 1-2**: Foundation - Learn basic concepts with simple, guided exercises
+- **Programs 3-4**: Application - Apply concepts to realistic scenarios
+- **Programs 5-6**: Mastery - Tackle advanced, comprehensive challenges that combine multiple techniques
+
+The new programs (05 and 06) in each topic provide advanced learners with challenging material that demonstrates real-world applications and expert-level problem-solving.
 
 ## 🗂️ Program Categories
 
@@ -36,6 +45,18 @@ Learn the fundamentals of Python variables, data types, and basic operations.
   - Use variables in geometric formulas
   - Work with the constant pi
   - Calculate rectangle, circle, and triangle measurements
+
+- **05_compound_interest.py** - Calculate compound interest over time
+  - Apply complex mathematical formulas with multiple operations
+  - Work with exponents and order of operations
+  - Compare different compounding frequencies
+  - Understand financial calculations
+
+- **06_physics_simulator.py** - Simulate physics motion and energy
+  - Combine multiple physics formulas
+  - Chain calculations where results feed into subsequent steps
+  - Work with kinetic and potential energy
+  - Calculate motion under acceleration
 
 ### 2. Conditionals
 **Location:** `02_conditionals/`
@@ -463,10 +484,14 @@ Note: You can adjust this order based on your curriculum and student needs.
 
 ## 🎯 Program Difficulty
 
-Each folder contains programs that increase slightly in difficulty:
-- **Programs 01-02**: Basic concepts and simple exercises
-- **Programs 03-04**: Intermediate practice with more complex scenarios
-- **BONUS TODOs**: Advanced challenges for extra practice
+Each folder contains 6 programs that progressively increase in difficulty:
+- **Program 01**: Very simple - introduction to basic concepts
+- **Program 02**: Simple - basic practice with minor variations
+- **Program 03**: Moderate - combining multiple concepts
+- **Program 04**: Intermediate - more complex scenarios and applications
+- **Program 05**: Advanced - multi-step problems requiring deeper understanding
+- **Program 06**: Challenging - comprehensive applications that test mastery
+- **BONUS TODOs**: Extra challenges for additional practice in each program
 
 ## 💡 Getting Help
 
