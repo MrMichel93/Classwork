@@ -22,76 +22,27 @@ how money grows over time with compound interest.
 # n = Number of times interest is compounded per year
 # t = Time in years
 
-# TODO 1: Create a variable 'principal' and set it to 1000.0 (initial investment)
+# TODO 1-4: Set up the investment inputs
+# Create variables for the starting principal, annual rate, compounding frequency, and number of years.
+# Hint: principal = ..., annual_rate = ..., times_compounded = ..., years = ...
 # Write your code here:
 
 
-# TODO 2: Create a variable 'annual_rate' and set it to 0.05 (5% interest)
+# TODO 5-10: Build the compound growth calculations
+# Use the formula pieces to calculate the final amount and interest earned.
+# Hint: rate_per_period = annual_rate / times_compounded, total_periods = times_compounded * years
+# Hint: growth_factor = 1 + rate_per_period, compound_multiplier = growth_factor ** total_periods
+# Hint: final_amount = principal * compound_multiplier, interest_earned = final_amount - principal
 # Write your code here:
 
 
-# TODO 3: Create a variable 'times_compounded' and set it to 12 (monthly)
+# TODO 11-14: Report results and compare compounding schedules
+# Print the main investment results, the percentage gain, and compare monthly versus annual compounding.
+# Hint: percentage_gain = (interest_earned / principal) * 100, final_amount_annual = ...
 # Write your code here:
 
 
-# TODO 4: Create a variable 'years' and set it to 10
+# BONUS TODO: Model a retirement scenario
+# Create a second investment example with the given starting amount, contributions, rate, and time span.
+# Use the compound-interest ideas above to estimate the final savings total.
 # Write your code here:
-
-
-# TODO 5: Calculate the rate per period: rate_per_period = annual_rate / times_compounded
-# Write your code here:
-
-
-# TODO 6: Calculate the total number of periods: total_periods = times_compounded * years
-# Write your code here:
-
-
-# TODO 7: Calculate (1 + rate_per_period) and store in 'growth_factor'
-# Write your code here:
-
-
-# TODO 8: Calculate growth_factor raised to the power of total_periods
-# Store it in 'compound_multiplier'
-# Hint: Use the ** operator for exponents
-# Write your code here:
-
-
-# TODO 9: Calculate the final amount: final_amount = principal * compound_multiplier
-# Write your code here:
-
-
-# TODO 10: Calculate the interest earned: interest_earned = final_amount - principal
-# Write your code here:
-
-
-# TODO 11: Print the principal, final amount, and interest earned with labels
-# Format the output to 2 decimal places
-# Write your code here:
-
-
-# TODO 12: Calculate and print the percentage gain
-# percentage_gain = (interest_earned / principal) * 100
-# Write your code here:
-
-
-# TODO 13: Compare different compounding frequencies
-# Calculate the final amount if compounded annually (n=1) instead of monthly
-# Store in 'final_amount_annual' and compare with monthly compounding
-# Write your code here:
-
-
-# TODO 14: Calculate how much more money you earn with monthly vs annual compounding
-# Store and print the difference
-# Write your code here:
-
-
-# BONUS TODO: Create a retirement savings scenario:
-# Initial investment: $5000
-# Monthly contribution: $200 (add to principal each year)
-# Annual rate: 7%
-# Time: 30 years
-# Calculate final amount for this complex scenario
-# Note: This is advanced - you'll need to estimate by treating contributions
-# as adding to the principal
-# Write your code here:
-

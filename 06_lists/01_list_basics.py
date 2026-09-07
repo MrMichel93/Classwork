@@ -18,61 +18,20 @@ Complete this program to practice basic list operations.
 # - Confirm the first and last numbers are 1 and 5, and the second fruit is banana.
 # - Confirm mixed contains four different types and the 2D-list middle element is 5.
 
-# TODO 1: Create a list called 'numbers' with the values [1, 2, 3, 4, 5]
+# TODO 1-7: Explore and modify a number list
+# Create the numbers list, inspect its contents, change one element,
+# and print the updated version.
+# Hint: numbers[0], numbers[-1], len(numbers), numbers[2] = ...
 # Write your code here:
 
 
-# TODO 2: Print the entire list
+# TODO 8-12: Create additional example lists
+# Build the fruits list, a mixed-type list, and an empty list, then print the requested values.
+# Hint: mixed can include int, float, str, and bool values
 # Write your code here:
 
 
-# TODO 3: Print the first element of the list (index 0)
-# Write your code here:
-
-
-# TODO 4: Print the last element of the list
-# Hint: Use negative indexing numbers[-1]
-# Write your code here:
-
-
-# TODO 5: Print the length of the list
-# Hint: Use len(numbers)
-# Write your code here:
-
-
-# TODO 6: Change the third element (index 2) to 10
-# Write your code here:
-
-
-# TODO 7: Print the modified list to see the change
-# Write your code here:
-
-
-# TODO 8: Create a list called 'fruits' with ["apple", "banana", "orange"]
-# Write your code here:
-
-
-# TODO 9: Print the second fruit (index 1)
-# Write your code here:
-
-
-# TODO 10: Create a list called 'mixed' that contains different types:
-# an integer, a float, a string, and a boolean
-# Example: [42, 3.14, "hello", True]
-# Write your code here:
-
-
-# TODO 11: Print each element of mixed list on a separate line
-# Write your code here:
-
-
-# TODO 12: Create an empty list called 'empty_list'
-# Hint: Use empty_list = []
-# Write your code here:
-
-
-# BONUS TODO: Create a list of lists (2D list):
-# [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# Access and print the middle element (5)
-# Hint: It's at [1][1]
+# BONUS TODO: Work with a 2D list
+# Create the grid and print its center value.
+# Hint: matrix[1][1]
 # Write your code here:

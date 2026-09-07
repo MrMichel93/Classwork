@@ -19,45 +19,23 @@ Follow the TODO comments to guide you through each step.
 # - Confirm the remainder is 0 and the power result is 100000.
 # - Change either number and verify every printed calculation updates.
 
-# TODO 1: Create a variable called 'number1' and assign it the value 10
+# TODO 1-2: Create two variables for your calculator inputs
+# Store two numbers that will be used for all calculations
 # Write your code here:
 
 
-# TODO 2: Create a variable called 'number2' and assign it the value 5
+# TODO 3-8: Perform arithmetic operations
+# You'll need to calculate: sum, difference, product, quotient, remainder, and power
+# Store each result in a separate variable
+# Hint: sum_result = number1 + number2 (use +, -, *, /, %, ** for the operations)
 # Write your code here:
 
 
-# TODO 3: Calculate the sum of number1 and number2, store it in a variable called 'sum_result'
+# TODO 9: Display the results
+# Print each calculation result with a descriptive label
 # Write your code here:
 
 
-# TODO 4: Calculate the difference (number1 - number2), store it in 'difference'
-# Write your code here:
-
-
-# TODO 5: Calculate the product (number1 * number2), store it in 'product'
-# Write your code here:
-
-
-# TODO 6: Calculate the quotient (number1 / number2), store it in 'quotient'
-# Write your code here:
-
-
-# TODO 7: Calculate the remainder when number1 is divided by number2, store it in 'remainder'
-# Hint: Use the modulo operator (%)
-# Write your code here:
-
-
-# TODO 8: Calculate number1 raised to the power of number2, store it in 'power'
-# Hint: Use the ** operator
-# Write your code here:
-
-
-# TODO 9: Print all the results in a user-friendly format
-# Example: print("Sum:", sum_result)
-# Write your code here to print all results:
-
-
-# BONUS TODO: Create a string variable with your name and print a message
-# Example: "Calculator completed by [Your Name]"
+# BONUS TODO: Add a personalized completion message
+# Create a string variable and incorporate it into a print statement
 # Write your code here:

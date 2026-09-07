@@ -25,46 +25,29 @@ Fahrenheit, Celsius, and Kelvin using the formulas provided.
 # Celsius to Kelvin: K = C + 273.15
 # Kelvin to Celsius: C = K - 273.15
 
-# TODO 1: Create a variable 'temp_celsius' and set it to 25.0
+# Temperature conversion formulas:
+# Celsius to Fahrenheit: F = (C * 9/5) + 32
+# Fahrenheit to Celsius: C = (F - 32) * 5/9
+# Celsius to Kelvin: K = C + 273.15
+# Kelvin to Celsius: C = K - 273.15
+
+# TODO 1-3: Create temperature conversions
+# Store a Celsius value, then convert it to Fahrenheit and Kelvin
+# Use the provided formulas to calculate the converted temperatures
 # Write your code here:
 
 
-# TODO 2: Convert temp_celsius to Fahrenheit and store in 'temp_fahrenheit'
-# Use the formula: F = (C * 9/5) + 32
+# TODO 4-6: Display the Celsius and converted temperatures
+# Print each result with a clear label
 # Write your code here:
 
 
-# TODO 3: Convert temp_celsius to Kelvin and store in 'temp_kelvin'
-# Use the formula: K = C + 273.15
+# TODO 7-9: Convert a body temperature from Fahrenheit to Celsius
+# Store 98.6 in a variable, convert it using the formula, and print both values
 # Write your code here:
 
 
-# TODO 4: Print the original Celsius temperature
-# Write your code here:
-
-
-# TODO 5: Print the converted Fahrenheit temperature
-# Write your code here:
-
-
-# TODO 6: Print the converted Kelvin temperature
-# Write your code here:
-
-
-# TODO 7: Now start with a Fahrenheit temperature of 98.6
-# Store it in a variable called 'body_temp_f'
-# Write your code here:
-
-
-# TODO 8: Convert body_temp_f to Celsius and store in 'body_temp_c'
-# Use the formula: C = (F - 32) * 5/9
-# Write your code here:
-
-
-# TODO 9: Print both body temperature values with descriptive labels
-# Write your code here:
-
-
-# BONUS TODO: Calculate the difference between water's freezing point (0°C)
-# and boiling point (100°C) in Fahrenheit. Store and print the result.
+# BONUS TODO: Calculate temperature differences
+# Find the difference between water's freezing (0°C) and boiling (100°C) points in Fahrenheit
+# Store and print the result
 # Write your code here:

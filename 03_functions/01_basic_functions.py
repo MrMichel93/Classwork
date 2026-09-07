@@ -19,60 +19,48 @@ Complete this program by creating and calling various functions.
 # - Confirm add_numbers(5, 3), multiply(4, 6), and calculate_area(10, 5) return 8, 24, and 50.
 # - Confirm is_even returns True for 8 and False for an odd number.
 
-# TODO 1: Define a function called 'greet' that takes no parameters
-# It should print "Hello, World!"
+# TODO 1-2: Create greeting functions
+# Build a 'greet' function (no parameters) and a 'greet_person' function (takes a name parameter)
+# Hint: def greet(): and def greet_person(name):
+# Greet should print "Hello, World!" and greet_person should print "Hello, [name]!"
 # Write your code here:
 
 
-# TODO 2: Call the greet function
+# TODO 3-4: Call both greeting functions
+# Test them with appropriate arguments
 # Write your code here:
 
 
-# TODO 3: Define a function called 'greet_person' that takes one parameter: name
-# It should print "Hello, [name]!" where [name] is the parameter value
+# TODO 5-6: Create arithmetic functions
+# Build 'add_numbers' and 'multiply' functions that return results
+# Hint: def add_numbers(a, b): return ... and def multiply(a, b): return ...
 # Write your code here:
 
 
-# TODO 4: Call greet_person with your name as an argument
+# TODO 7: Call add_numbers and print the result
 # Write your code here:
 
 
-# TODO 5: Define a function called 'add_numbers' that takes two parameters: a and b
-# It should return the sum of a and b (use the return statement)
+# TODO 8: Create a geometry function
+# Build 'calculate_area' that takes length and width parameters and returns their product
+# Hint: def calculate_area(length, width):
 # Write your code here:
 
 
-# TODO 6: Call add_numbers with arguments 5 and 3, store the result in a variable
-# called 'result', and print it
+# TODO 9: Test the geometry function with length=10 and width=5
 # Write your code here:
 
 
-# TODO 7: Define a function called 'multiply' that takes two parameters
-# and returns their product
+# TODO 10: Create a utility function
+# Build 'is_even' that takes a number and returns True/False based on whether it's even
+# Hint: def is_even(number): and use the % operator to check divisibility by 2
 # Write your code here:
 
 
-# TODO 8: Define a function called 'calculate_area' that takes two parameters:
-# length and width, and returns the area (length * width)
+# TODO 11: Call is_even with 8 and print the result
 # Write your code here:
 
 
-# TODO 9: Call calculate_area with length=10 and width=5
-# Print the result with a descriptive message
-# Write your code here:
-
-
-# TODO 10: Define a function called 'is_even' that takes one parameter: number
-# It should return True if the number is even, False otherwise
-# Hint: Use the modulo operator (%)
-# Write your code here:
-
-
-# TODO 11: Call is_even with the number 8 and print the result
-# Write your code here:
-
-
-# BONUS TODO: Define a function called 'power' that takes two parameters:
-# base and exponent, with exponent having a default value of 2
-# It should return base raised to the power of exponent
+# BONUS TODO: Create a 'power' function with a default parameter
+# Build 'power(base, exponent=2)' so it can calculate powers with 2 as the default
 # Write your code here:

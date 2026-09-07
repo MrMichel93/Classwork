@@ -18,61 +18,19 @@ Complete this program to practice iterating through strings.
 # - Confirm "programming" has two m characters, the sentence has three spaces, and abc123xyz has three digits.
 # - Confirm doubling Python produces PPyytthhoonn and Secret123 reports a digit.
 
-# TODO 1: Create a string 'word' with the value "Python"
-# Use a for loop to print each character on a separate line
+# TODO 1-5: Count and inspect characters with loops
+# Print characters one by one, then count vowels, specific letters, spaces, and digits.
+# Hint: combine for character in text with tests like character in ... or character.isdigit()
 # Write your code here:
 
 
-# TODO 2: Create a string 'text' with the value "Hello, World!"
-# Use a for loop to count how many vowels (a, e, i, o, u) are in the text
-# Print the count
-# Hint: Check if each character is in "aeiouAEIOU"
+# TODO 6-9: Build new strings and classify characters
+# Create the consonant-only version, the doubled-character string,
+# case/other character counts, and the password digit check.
+# Hint: use accumulators such as result = "" and counters for each category
 # Write your code here:
 
 
-# TODO 3: Create a string 'message' with the value "programming"
-# Use a for loop to count how many times the letter 'm' appears
-# Write your code here:
-
-
-# TODO 4: Create a string 'sentence' with the value "Learning Python is fun"
-# Use a for loop to count how many spaces are in the sentence
-# Write your code here:
-
-
-# TODO 5: Create a string 'data' with the value "abc123xyz"
-# Use a for loop to count how many digits are in the string
-# Hint: Use character.isdigit() to check if a character is a digit
-# Write your code here:
-
-
-# TODO 6: Create a string 'phrase' with the value "Hello World"
-# Use a for loop to build a new string with only consonants
-# Print the result
-# Hint: For each character, check if it's NOT a vowel and NOT a space
-# Write your code here:
-
-
-# TODO 7: Create a string 'code' with the value "Python"
-# Use a for loop to create a new string where each character is repeated twice
-# Result should be: "PPyytthhoonn"
-# Write your code here:
-
-
-# TODO 8: Create a string 'text' with the value "Hello, Python!"
-# Use a for loop to count uppercase letters, lowercase letters, and other characters
-# Print all three counts
-# Hint: Use character.isupper() and character.islower()
-# Write your code here:
-
-
-# TODO 9: Create a string 'password' with the value "Secret123"
-# Use a for loop to check if the password contains at least one digit
-# Print True or False
-# Write your code here:
-
-
-# BONUS TODO: Create a string "level" (a palindrome)
-# Use a loop to verify if it's a palindrome (reads same forwards and backwards)
-# Compare each character from the start with its corresponding character from the end
+# BONUS TODO: Verify a palindrome with a loop
+# Compare matching characters from the front and back of the word.
 # Write your code here:

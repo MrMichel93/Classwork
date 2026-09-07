@@ -19,52 +19,27 @@ what activities they can do.
 # - Test 16, 18, and 21 to confirm each activity message appears at the right age.
 # - Test -1 to confirm invalid ages do not receive a normal age-group message.
 
-# TODO 1: Create a variable 'age' and set it to your age
+# TODO 1: Set up your age variable
+# Assign a test age value
 # Write your code here:
 
 
-# TODO 2: Create an if statement to check if age < 0
-# If true, print "Invalid age"
+# TODO 2-6: Create a conditional structure for age classifications
+# Classify ages into groups: invalid (<0), child (0-12), teenager (13-19), adult (20-64), senior (65+)
+# Hint: Use if/elif/else; use 'and' operator for range checks (age >= 0 and age <= 12)
 # Write your code here:
 
 
-# TODO 3: Add an elif to check if age is between 0 and 12 (inclusive)
-# Hint: Use 'and' operator - if age >= 0 and age <= 12:
-# If true, print "You are a child"
+# TODO 7-9: Add activity eligibility checks
+# Create separate if statements to check:
+# - Age 16+: Can get driver's license
+# - Age 18+: Can vote
+# - Age 21+: All adult activities
+# These print messages in addition to the age group classification
 # Write your code here:
 
 
-# TODO 4: Add an elif to check if age is between 13 and 19 (inclusive)
-# If true, print "You are a teenager"
-# Write your code here:
-
-
-# TODO 5: Add an elif to check if age is between 20 and 64 (inclusive)
-# If true, print "You are an adult"
-# Write your code here:
-
-
-# TODO 6: Add an else statement for age 65 and above
-# Print "You are a senior citizen"
-# Write your code here:
-
-
-# TODO 7: Add a separate if statement to check if age >= 16
-# If true, print "You can get a driver's license"
-# Write your code here:
-
-
-# TODO 8: Add another if statement to check if age >= 18
-# If true, print "You can vote"
-# Write your code here:
-
-
-# TODO 9: Add an if statement to check if age >= 21
-# If true, print "You are old enough for all adult activities"
-# Write your code here:
-
-
-# BONUS TODO: Create a variable 'has_id' and set it to True or False
-# Check if age >= 18 AND has_id is True, then print "Can enter the club"
-# Otherwise print "Cannot enter the club"
+# BONUS TODO: Add ID verification logic
+# Create a 'has_id' variable and check if age >= 18 AND has_id is True
+# Print appropriate club entry message
 # Write your code here:

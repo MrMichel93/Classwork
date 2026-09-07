@@ -18,46 +18,29 @@ Complete this grade checker program that assigns letter grades based on scores.
 # - Test 95, 77, 65, and 45 to confirm A, C, D, and F branches.
 # - Test -5 and 110 to confirm invalid scores are handled before grade branches.
 
-# TODO 1: Create a variable 'score' and set it to 85
+# TODO 1: Set up your score variable
+# Assign a test score value
 # Write your code here:
 
 
-# TODO 2: Create an if statement to check if score >= 90
-# If true, print "Grade: A"
+# TODO 2-6: Create a conditional structure to assign letter grades
+# You need to check score ranges and print the appropriate grade (A, B, C, D, F)
+# Hint: Use if/elif/else with comparisons (>=). Start with the highest range (90+) first.
 # Write your code here:
 
 
-# TODO 3: Add an elif statement to check if score >= 80
-# If true, print "Grade: B"
+# TODO 7: Add validation BEFORE the grading logic
+# Check if the score is valid (between 0 and 100)
+# Print "Invalid score" if it's out of range
+# Hint: Use 'or' to check if score > 100 or score < 0
 # Write your code here:
 
 
-# TODO 4: Add an elif statement to check if score >= 70
-# If true, print "Grade: C"
-# Write your code here:
+# TODO 8: Test your program with different values
+# Try: 95, 82, 77, 65, 45, -5, 110 and verify outputs
+# Write your test observations here:
 
 
-# TODO 5: Add an elif statement to check if score >= 60
-# If true, print "Grade: D"
-# Write your code here:
-
-
-# TODO 6: Add an else statement for scores below 60
-# Print "Grade: F"
-# Write your code here:
-
-
-# TODO 7: Add another check - if score is greater than 100 or less than 0,
-# print "Invalid score" (do this BEFORE the grade checks)
-# Write your code here:
-
-
-# TODO 8: Test your program with different score values
-# Try: 95, 82, 77, 65, 45, -5, 110
-# Change the score variable and run the program multiple times
-# Write your test notes here as comments:
-
-
-# BONUS TODO: Add a check that prints "Perfect score!" if score equals 100
-# This should happen in addition to printing the grade
+# BONUS TODO: Add a bonus message for a perfect score (100)
+# Print "Perfect score!" in addition to the grade
 # Write your code here:

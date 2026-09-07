@@ -18,65 +18,24 @@ Complete this program to create various patterns using loops.
 # - Confirm the numbered triangle ends with 12345 and the square has hollow middle rows.
 # - Confirm the alternating pattern is *-*-*-*-*-.
 
-# TODO 1: Use a for loop to print 10 asterisks in a row: **********
+# TODO 1-2: Print basic star patterns
+# Display a single row of stars and then a rectangle of stars.
+# Hint: combine loops with repeated-character strings or nested loops
 # Write your code here:
 
 
-# TODO 2: Use a for loop to print 5 rows of 10 asterisks each
-# Result should be a 5x10 rectangle of asterisks
-# Hint: You'll need a nested loop or print "*" * 10 inside a loop
+# TODO 3-6: Build growing and shrinking patterns
+# Create the star triangle, number triangle, hollow square, and countdown pattern.
+# Hint: use one loop to control rows and another to control what appears in each row
 # Write your code here:
 
 
-# TODO 3: Use a nested for loop to print a right triangle pattern:
-# *
-# **
-# ***
-# ****
-# *****
-# Hint: Outer loop for rows, inner loop for asterisks in each row
+# TODO 7: Print an alternating character pattern
+# Build the repeated *- pattern across one line.
+# Hint: use the loop position to decide which character comes next
 # Write your code here:
 
 
-# TODO 4: Use a for loop to print numbers in a triangle pattern:
-# 1
-# 12
-# 123
-# 1234
-# 12345
-# Write your code here:
-
-
-# TODO 5: Use a for loop to print a square with a border:
-# *****
-# *   *
-# *   *
-# *   *
-# *****
-# Hint: First and last rows are all stars, middle rows have stars at edges only
-# Write your code here:
-
-
-# TODO 6: Use a for loop to print a countdown pattern:
-# 54321
-# 5432
-# 543
-# 54
-# 5
-# Write your code here:
-
-
-# TODO 7: Use a loop to print alternating characters:
-# *-*-*-*-*-
-# Hint: Check if the loop counter is even or odd
-# Write your code here:
-
-
-# BONUS TODO: Create a pyramid pattern:
-#     *
-#    ***
-#   *****
-#  *******
-# *********
-# Hint: You need spaces before the stars, and the number of stars increases oddly
+# BONUS TODO: Create a centered pyramid
+# Print the pyramid using spaces and stars.
 # Write your code here:

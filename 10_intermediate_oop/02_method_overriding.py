@@ -17,80 +17,39 @@ Complete this program to learn about method overriding.
 # Expect: a 4 by 6 Rectangle area is 24; Dog.speak() returns "Woof!";
 # a $50,000 Manager bonus is $10,000.
 
-# TODO 1: Define a parent class 'Shape' with:
-# - __init__ taking 'name'
-# - method 'area' that returns 0 (placeholder)
-# - method 'description' that returns "This is a shape"
+# TODO 1-4: Create a Shape/Rectangle hierarchy with method overriding
+# Build Shape with __init__(name), area() returns 0, description() returns "This is a shape"
+# Build Rectangle(Shape) with __init__(name, width, height)
+# Override area() to return width * height
+# Create a Rectangle instance and print its area
 # Write your code here:
 
 
-# TODO 2: Define a child class 'Rectangle' that inherits from Shape
-# Override __init__ to take name, width, and height
-# Call the parent's __init__ for name, then store width and height
-# Hint: For now, don't use super(); we'll cover that next
+# TODO 5-6: Create a Circle child class that overrides area
+# Build Circle(Shape) with __init__(name, radius)
+# Override area() to return 3.14159 * radius * radius
+# Create a Circle instance and print its area
 # Write your code here:
 
 
-# TODO 3: Override the 'area' method in Rectangle
-# Make it return width * height
-# Write your code here:
-
-
-# TODO 4: Create a Rectangle instance
-# Print its area using the overridden method
-# Write your code here:
-
-
-# TODO 5: Define another child class 'Circle' that inherits from Shape
-# Override __init__ to take name and radius
-# Override 'area' to return 3.14159 * radius * radius
-# Write your code here:
-
-
-# TODO 6: Create a Circle instance
-# Print its area
-# Write your code here:
-
-
-# TODO 7: Define a parent class 'Animal' with:
-# - __init__ taking 'name'
-# - method 'speak' that returns "Some sound"
-# Write your code here:
-
-
-# TODO 8: Create child classes Dog, Cat, and Cow
-# Each should override the 'speak' method
+# TODO 7-10: Create an Animal hierarchy with speak() overriding
+# Build Animal with __init__(name), speak() returns "Some sound"
+# Build Dog, Cat, Cow as children, each overriding speak()
 # Dog returns "Woof!", Cat returns "Meow!", Cow returns "Moo!"
+# Create instances, call speak() to demonstrate different behaviors
+# Create a list of all three and loop to print names and sounds
 # Write your code here:
 
 
-# TODO 9: Create instances of Dog, Cat, and Cow
-# Call speak() on each to see the different overridden behaviors
+# TODO 11-13: Create an Employee hierarchy with bonus calculation
+# Build Employee with __init__(name, salary), calculate_bonus() returns salary * 0.1
+# Build Manager(Employee) that overrides calculate_bonus() to return salary * 0.2
+# Create both Employee and Manager with same salary, print bonuses to show difference
 # Write your code here:
 
 
-# TODO 10: Create a list containing all three animal instances
-# Loop through and print each animal's name and sound
-# Write your code here:
-
-
-# TODO 11: Define a parent class 'Employee' with:
-# - __init__ taking name and salary
-# - method 'calculate_bonus' returning salary * 0.1 (10%)
-# Write your code here:
-
-
-# TODO 12: Create a child class 'Manager' that inherits from Employee
-# Override 'calculate_bonus' to return salary * 0.2 (20%)
-# Write your code here:
-
-
-# TODO 13: Create instances of both Employee and Manager with the same salary
-# Print their bonuses to see the difference due to overriding
-# Write your code here:
-
-
-# BONUS TODO: Override the __str__ method in a custom class
-# This method is called when you use print() or str() on an object
-# Create a Person class and override __str__ to return a formatted string
+# BONUS TODO: Override __str__ in a custom class
+# __str__ is called when you print() or str() an object
+# Create Person class that overrides __str__ to return a formatted string
+# Test with print statements
 # Write your code here:

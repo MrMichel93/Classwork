@@ -19,66 +19,29 @@ Complete this program to calculate areas and perimeters of different shapes.
 # - Confirm the 8 by 6 triangle has area 24.0.
 
 # For circles, we need pi. We'll define it as a variable.
-# TODO 1: Create a variable 'pi' and set it to 3.14159
-# Write your code here:
-
-
-# RECTANGLE CALCULATIONS
-# TODO 2: Create variables for rectangle dimensions
-# length = 10.5
-# width = 6.2
-# Write your code here:
-
-
-# TODO 3: Calculate the area of the rectangle (length * width)
-# Store it in 'rectangle_area'
-# Write your code here:
-
-
-# TODO 4: Calculate the perimeter of the rectangle (2 * (length + width))
-# Store it in 'rectangle_perimeter'
-# Write your code here:
-
-
-# TODO 5: Print the rectangle area and perimeter
+# For circles, we need pi. We'll define it as a variable.
+# TODO 1-5: Build the rectangle calculations
+# Create pi, the rectangle dimensions, and the rectangle area/perimeter results.
+# Then print the rectangle measurements with clear labels.
+# Hint: pi = 3.14159, rectangle_area = length * width, rectangle_perimeter = 2 * (length + width)
 # Write your code here:
 
 
 # CIRCLE CALCULATIONS
-# TODO 6: Create a variable 'radius' and set it to 5.0
-# Write your code here:
-
-
-# TODO 7: Calculate the area of the circle (pi * radius * radius)
-# Store it in 'circle_area'
-# Write your code here:
-
-
-# TODO 8: Calculate the circumference of the circle (2 * pi * radius)
-# Store it in 'circle_circumference'
-# Write your code here:
-
-
-# TODO 9: Print the circle area and circumference
+# TODO 6-9: Build the circle calculations
+# Create the radius, calculate the circle area and circumference, and print both values.
+# Hint: circle_area = pi * radius * radius, circle_circumference = 2 * pi * radius
 # Write your code here:
 
 
 # TRIANGLE CALCULATIONS
-# TODO 10: Create variables for triangle dimensions
-# base = 8.0
-# height = 6.0
+# TODO 10-12: Build the triangle calculations
+# Create the triangle dimensions, calculate the area, and print the result.
+# Hint: triangle_area = 0.5 * base * height
 # Write your code here:
 
 
-# TODO 11: Calculate the area of the triangle (0.5 * base * height)
-# Store it in 'triangle_area'
-# Write your code here:
-
-
-# TODO 12: Print the triangle area
-# Write your code here:
-
-
-# BONUS TODO: A square has a side length of 7. Calculate and print both
-# its area and perimeter using a single variable for the side length.
+# BONUS TODO: Add a square example
+# Use one side-length variable to calculate and print the square's area and perimeter.
+# Hint: square_area = side * side, square_perimeter = 4 * side
 # Write your code here:
