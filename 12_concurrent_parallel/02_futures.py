@@ -80,11 +80,12 @@ from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED, ALL_CO
 # Write your code here:
 
 
-# TODO 11: Implement cancellation
-# Submit a slow task (5+ seconds)
-# Wait for 1 second
-# Try to cancel the future using future.cancel()
-# Check if it was cancelled using future.cancelled()
+# TODO 11: Investigate cancellation limits
+# Submit one task, cancel it before it starts, and inspect the return value.
+# Then submit a slow task (5+ seconds), wait for 1 second, and try cancel().
+# A Future cannot cancel a task that is already running. Use a threading.Event
+# to show cooperative cancellation for the running task.
+# Check both the return value of future.cancel() and future.cancelled().
 # Write your code here:
 
 
@@ -105,4 +106,3 @@ from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED, ALL_CO
 # Submit multiple tasks, periodically check how many are done
 # Print progress percentage every second until all complete
 # Write your code here:
-

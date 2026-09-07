@@ -68,9 +68,10 @@ import time
 # Write your code here:
 
 
-# TODO 9: Use Queue.qsize() to check queue size
-# Note: qsize() is not reliable on all platforms
-# Use it to monitor queue status
+# TODO 9: Explore queue-size portability
+# qsize() is unavailable or unreliable on some platforms, including macOS.
+# Do not use it to control program flow; optionally catch NotImplementedError
+# and report whether it is supported on your system.
 # Write your code here:
 
 
@@ -80,9 +81,9 @@ import time
 # Write your code here:
 
 
-# TODO 11: Use Queue.empty() and Queue.full()
-# Check if queue is empty before getting
-# Create a bounded queue with maxsize
+# TODO 11: Create a bounded queue with maxsize
+# Do not use empty() or full() as a pre-check: another process can change the
+# queue immediately afterward. Use get(timeout=...) and put(timeout=...) instead.
 # Write your code here:
 
 
@@ -103,4 +104,3 @@ import time
 # Worker processes fetch URLs and put results in result queue
 # Main process collects and saves results
 # Write your code here:
-

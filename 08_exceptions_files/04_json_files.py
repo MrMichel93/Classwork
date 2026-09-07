@@ -12,6 +12,13 @@ Instructions:
 Complete this program to practice working with JSON files.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_08_exceptions_files
+# - Confirm student data saves and reloads with its name, age, grade, and subjects intact.
+# - Confirm dumps/loads round-trip the example list and city dictionary, and invalid JSON is handled.
+# - Confirm students.json is indented, names print from it, and save_to_json preserves supplied data.
+# - Self-checks use temporary files; do not alter course files.
+
 # First, import the json module at the top
 import json
 
@@ -92,4 +99,3 @@ import json
 # For example, change a student's grade in 'student.json'
 # Read the file, modify the data, and write it back
 # Write your code here:
-

@@ -13,6 +13,12 @@ Complete the calculator program below by filling in the missing code.
 Follow the TODO comments to guide you through each step.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_01_variables_expressions_statements
+# - With 10 and 5, confirm the sum, difference, product, and quotient are 15, 5, 50, and 2.0.
+# - Confirm the remainder is 0 and the power result is 100000.
+# - Change either number and verify every printed calculation updates.
+
 # TODO 1: Create a variable called 'number1' and assign it the value 10
 # Write your code here:
 
@@ -55,4 +61,3 @@ Follow the TODO comments to guide you through each step.
 # BONUS TODO: Create a string variable with your name and print a message
 # Example: "Calculator completed by [Your Name]"
 # Write your code here:
-

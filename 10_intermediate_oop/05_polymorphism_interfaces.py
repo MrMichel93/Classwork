@@ -13,6 +13,11 @@ Instructions:
 Complete this program exploring polymorphism and interface patterns.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_10_intermediate_oop.IntermediateOOPSelfChecks.test_polymorphism_interfaces
+# Expect: a circle plus 3-by-4 rectangle area is about 15.14159; PayPal processes
+# through PaymentProcessor; Bicycle.start() reports beginning to pedal.
+
 # TODO 1: Create a Shape base class (interface-like)
 # Methods: area(), perimeter(), describe()
 # These should return 0 or "Unknown shape" (will be overridden)
@@ -126,8 +131,8 @@ Complete this program exploring polymorphism and interface patterns.
 # TODO 17: Create vehicle type classes with different behaviors
 # Car, Motorcycle, Truck, Bicycle
 # Each implements methods differently
-# Bicycle might not have start() (human powered)
-# Handle this appropriately
+# Bicycle implements start() as beginning to pedal so every Vehicle satisfies
+# the same interface.
 # Write your code here:
 
 
@@ -150,4 +155,3 @@ Complete this program exploring polymorphism and interface patterns.
 # - Works with any plugin type
 # This demonstrates real-world polymorphism use case
 # Write your code here:
-

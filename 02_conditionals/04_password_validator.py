@@ -12,6 +12,12 @@ Instructions:
 Complete this program that validates a password based on certain rules.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_02_conditionals
+# - Confirm "Secret123" reports good length, a number, matching confirmation, and valid status.
+# - Try a password shorter than eight characters to confirm it is rejected.
+# - Try "user123" and a value containing "password" to confirm both invalid cases.
+
 # TODO 1: Create a variable 'password' and set it to "Secret123"
 # Write your code here:
 
@@ -65,4 +71,3 @@ Complete this program that validates a password based on certain rules.
 # Hint: You can check if password != password.lower()
 # This means there's at least one uppercase character
 # Write your code here:
-

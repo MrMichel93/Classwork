@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice iterating through and processing lists.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_06_lists
+# - Confirm fruit names print one per line and doubled numbers are [20, 40, 60, 80, 100].
+# - Confirm the average score is 86.6, two words exceed five letters, and the highest temperature is 82.
+# - Confirm even/odd lists split 1 through 10 correctly and the price total includes 8% tax.
+
 # TODO 1: Create a list 'fruits' with ["apple", "banana", "cherry", "date"]
 # Use a for loop to print each fruit
 # Write your code here:
@@ -79,4 +85,3 @@ Complete this program to practice iterating through and processing lists.
 # Use zip() in a for loop to print each name with their age
 # Example: "Alice is 25 years old"
 # Write your code here:
-

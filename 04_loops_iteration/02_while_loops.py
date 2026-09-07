@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice while loops and conditional iteration.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_04_loops_iteration
+# - Confirm the counter prints 1 through 10 and the countdown prints 10 through 1.
+# - Confirm the sum from 1 to 20 is 210 and repeated multiplication gives 2^10 = 1024.
+# - Confirm the secret-number loop prints "Found it!" after seven guesses.
+
 # TODO 1: Create a variable 'counter' and set it to 1
 # Use a while loop to print numbers from 1 to 10
 # Don't forget to increment counter inside the loop!
@@ -62,4 +68,3 @@ Complete this program to practice while loops and conditional iteration.
 # Set a secret number, use a while loop to simulate guesses from 1 to 100
 # Print when you find the secret number and how many tries it took
 # Write your code here:
-

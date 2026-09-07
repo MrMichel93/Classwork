@@ -12,6 +12,12 @@ Instructions:
 Complete this program that compares numbers and determines their relationships.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_02_conditionals
+# - With 15, 20, and 15, confirm the second number is larger and the difference is 5.
+# - Confirm num1 and num3 are reported equal and that at least two numbers match.
+# - Try equal numbers and reverse the first two numbers to exercise every comparison branch.
+
 # TODO 1: Create two variables 'num1' and 'num2'
 # Set num1 = 15 and num2 = 20
 # Write your code here:
@@ -62,4 +68,3 @@ Complete this program that compares numbers and determines their relationships.
 # BONUS TODO: Check if num1 is even or odd and print the result
 # Hint: Use the modulo operator (%) - if num % 2 == 0, it's even
 # Write your code here:
-

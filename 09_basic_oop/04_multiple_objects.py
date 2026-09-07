@@ -12,6 +12,11 @@ Instructions:
 Complete this program to practice working with multiple objects.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_09_basic_oop.BasicOOPSelfChecks.test_multiple_objects
+# Expect: a $10 product with quantity 3 is worth $30; grades 80, 100, 90 average 90;
+# a library can check out an available book once.
+
 # TODO 1: Define a class 'Product' with __init__ taking: name, price, quantity
 # Store these as instance attributes
 # Write your code here:
@@ -89,4 +94,3 @@ Complete this program to practice working with multiple objects.
 # Library should have methods to add books and check out books
 # Create a library, add books, and test checking them out
 # Write your code here:
-

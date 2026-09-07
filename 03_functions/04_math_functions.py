@@ -12,6 +12,12 @@ Instructions:
 Complete this program by creating various mathematical functions.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_03_functions
+# - Confirm find_max(15, 23) and find_min(15, 23) return 23 and 15.
+# - Confirm absolute_value(-15) returns 15 and is_positive distinguishes positive and negative values.
+# - Confirm radius 5 circle calculations and find_max_of_three(15, 23, 19) are correct.
+
 # TODO 1: Define a function called 'find_max' that takes two parameters: a and b
 # It should return the larger of the two numbers
 # Hint: Use an if statement
@@ -74,4 +80,3 @@ Complete this program by creating various mathematical functions.
 # weight_kg and height_m
 # It should return the BMI (Body Mass Index): weight / (height * height)
 # Write your code here:
-

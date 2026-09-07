@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice handling exceptions gracefully.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_08_exceptions_files
+# - Confirm division by zero, invalid integer conversion, and bad list indexing print their error messages.
+# - Confirm safe_divide(10, 2) returns 5.0 and safe_divide(10, 0) returns None.
+# - Confirm check_positive(-5) raises and reports "Number must be positive"; finally always prints its message.
+
 # TODO 1: Write a try-except block to handle division by zero
 # Try to divide 10 by 0 and catch the ZeroDivisionError
 # Print "Cannot divide by zero!" in the except block
@@ -84,4 +90,3 @@ Complete this program to practice handling exceptions gracefully.
 # Use it to validate that an age is between 0 and 120
 # Write a function that raises this exception for invalid ages
 # Write your code here:
-

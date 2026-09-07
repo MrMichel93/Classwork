@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn about method overriding.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_10_intermediate_oop.IntermediateOOPSelfChecks.test_method_overriding
+# Expect: a 4 by 6 Rectangle area is 24; Dog.speak() returns "Woof!";
+# a $50,000 Manager bonus is $10,000.
+
 # TODO 1: Define a parent class 'Shape' with:
 # - __init__ taking 'name'
 # - method 'area' that returns 0 (placeholder)
@@ -89,4 +94,3 @@ Complete this program to learn about method overriding.
 # This method is called when you use print() or str() on an object
 # Create a Person class and override __str__ to return a formatted string
 # Write your code here:
-

@@ -54,7 +54,7 @@ lists program!
 # numbers = [1, 2, 3, 4, 5]
 # target_sum = 5
 # Find all contiguous subarrays that sum to target
-# Results: [5], [2, 3], [1, 2, 2] (wait, no duplicates)
+# Results: [2, 3], [5]
 # Print start and end indices for each subarray
 # Write your code here:
 
@@ -207,4 +207,3 @@ lists program!
 # Validate if current board state is valid
 # Check rows, columns, and 3x3 sub-boxes
 # Write your code here:
-

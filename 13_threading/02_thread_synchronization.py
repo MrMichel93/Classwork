@@ -18,16 +18,17 @@ import time
 # Global counter for demonstrating race conditions
 counter = 0
 
-# TODO 1: Create a function 'increment_counter' that:
-# - Increments the global counter 100000 times
-# - Use a loop: for _ in range(100000)
+# TODO 1: Create a function 'increment_counter' that demonstrates a race condition:
+# - In a loop, copy counter to a local variable
+# - Call time.sleep(0) to make a thread switch likely
+# - Add 1 to the local value, then assign it back to counter
 # Write your code here:
 
 
 # TODO 2: Create two threads that both run increment_counter
 # Start both threads and wait for completion using join()
 # Print the final counter value
-# Expected: 200000, Actual: Likely less due to race condition!
+# Expected: 200000, Actual: usually less due to the deliberately separated update.
 # Write your code here:
 
 
@@ -104,4 +105,3 @@ counter = 0
 # Use locks to make it thread-safe
 # Create producer and consumer threads
 # Write your code here:
-

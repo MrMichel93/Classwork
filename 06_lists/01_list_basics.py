@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice basic list operations.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_06_lists
+# - Confirm numbers starts as [1, 2, 3, 4, 5], then prints as [1, 2, 10, 4, 5].
+# - Confirm the first and last numbers are 1 and 5, and the second fruit is banana.
+# - Confirm mixed contains four different types and the 2D-list middle element is 5.
+
 # TODO 1: Create a list called 'numbers' with the values [1, 2, 3, 4, 5]
 # Write your code here:
 
@@ -70,4 +76,3 @@ Complete this program to practice basic list operations.
 # Access and print the middle element (5)
 # Hint: It's at [1][1]
 # Write your code here:
-

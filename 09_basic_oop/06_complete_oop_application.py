@@ -1,6 +1,6 @@
 """
-Mini-Program 6: Complete OOP Application - Game System
-Topic: Basic OOP
+Mini-Program 6: OOP Capstone - Game System
+Topic: Basic OOP (University Enrichment)
 
 Learning Objectives:
 - Design a complete application using OOP principles
@@ -217,4 +217,3 @@ basic OOP program!
 # Handle save file corruption
 # This is very comprehensive!
 # Write your code here:
-

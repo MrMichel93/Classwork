@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice accumulating values in loops.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_04_loops_iteration
+# - Confirm the 1-to-100 sum is 5050 and the factorial of 10 is 3628800.
+# - Confirm the repeated-vowel string is aeiouaeiouaeiou.
+# - Confirm the supplied list has maximum 19, minimum 2, and even values [12, 8, 2].
+
 # TODO 1: Use a for loop to calculate the sum of all numbers from 1 to 100
 # Store in a variable called 'sum_total' and print it
 # Write your code here:
@@ -68,4 +74,3 @@ Complete this program to practice accumulating values in loops.
 # BONUS TODO: Calculate the sum of squares of numbers from 1 to 10
 # (1^2 + 2^2 + 3^2 + ... + 10^2)
 # Write your code here:
-
