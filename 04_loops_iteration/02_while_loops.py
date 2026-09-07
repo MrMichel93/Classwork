@@ -18,53 +18,24 @@ Complete this program to practice while loops and conditional iteration.
 # - Confirm the sum from 1 to 20 is 210 and repeated multiplication gives 2^10 = 1024.
 # - Confirm the secret-number loop prints "Found it!" after seven guesses.
 
-# TODO 1: Create a variable 'counter' and set it to 1
-# Use a while loop to print numbers from 1 to 10
-# Don't forget to increment counter inside the loop!
+# TODO 1-2: Build basic while-loop counters
+# Print a counting sequence from 1 to 10 and a countdown from 10 to 1.
+# Hint: start with a counter variable and update it inside each loop
 # Write your code here:
 
 
-# TODO 2: Create a variable 'countdown' and set it to 10
-# Use a while loop to count down from 10 to 1
-# Print each number
+# TODO 3-5: Use while loops for accumulation and repeated change
+# Build a running total, repeatedly double a number, and calculate 2^10 using multiplication.
+# Hint: keep track of both the current value and the loop condition
 # Write your code here:
 
 
-# TODO 3: Create a variable 'total' and set it to 0
-# Use a while loop to add numbers from 1 to 20 to total
-# Print the final total
-# Hint: Create another variable for the current number
+# TODO 6-7: Simulate search and repeated halving
+# Use one loop to reach the secret number and another to keep dividing until the value drops below 1.
+# Track the number of guesses or divisions.
 # Write your code here:
 
 
-# TODO 4: Create a variable 'number' and set it to 1
-# Use a while loop to double the number until it exceeds 1000
-# Print the number each time it doubles
-# Write your code here:
-
-
-# TODO 5: Create a variable 'power' and set it to 1
-# Use a while loop to calculate 2^10 (2 to the power of 10)
-# Don't use the ** operator, use multiplication in a loop
-# Write your code here:
-
-
-# TODO 6: Create a variable 'guess' and set it to 1
-# The secret number is 7
-# Use a while loop to keep incrementing guess until it equals 7
-# Print "Found it!" when you find the number
-# Print how many guesses it took
-# Write your code here:
-
-
-# TODO 7: Create a variable 'num' and set it to 100
-# Use a while loop to divide num by 2 until it's less than 1
-# Print num each time
-# Count how many divisions occurred
-# Write your code here:
-
-
-# BONUS TODO: Implement a simple number guessing game
-# Set a secret number, use a while loop to simulate guesses from 1 to 100
-# Print when you find the secret number and how many tries it took
+# BONUS TODO: Extend the guessing idea
+# Simulate a full number search from 1 to 100 and report when the secret value is found.
 # Write your code here:

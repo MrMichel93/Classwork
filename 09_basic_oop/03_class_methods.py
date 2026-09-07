@@ -17,81 +17,38 @@ Complete this program to learn about class methods.
 # Expect: add(10) then subtract(3) gives 7; a radius-5 circle has area 78.53975;
 # incrementing a new Counter once makes its count 1.
 
-# TODO 1: Define a class 'Calculator' with an __init__ method
-# Initialize an instance attribute 'result' to 0
+# TODO 1-5: Create a Calculator class with basic operations
+# Define Calculator with __init__ initializing result to 0
+# Add 'add' and 'subtract' methods that modify self.result
+# Add 'get_result' method that returns the current result
+# Hint: def add(self, number): self.result += number
+# Create an instance, call add(10), add(5), subtract(3), and print result
 # Write your code here:
 
 
-# TODO 2: Add a method called 'add' that takes a number parameter
-# The method should add the number to self.result
-# Hint: def add(self, number):
-#           self.result += number
+# TODO 6-9: Create a Circle class with geometric calculations
+# Define Circle with __init__(self, radius)
+# Add 'calculate_area' and 'calculate_circumference' methods
+# Hint: Area = 3.14159 * r * r; Circumference = 2 * 3.14159 * r
+# Create an instance with radius 5 and call both methods
 # Write your code here:
 
 
-# TODO 3: Add a method called 'subtract' that takes a number parameter
-# The method should subtract the number from self.result
+# TODO 10-11: Create a Rectangle class for area and perimeter calculations
+# Define Rectangle with __init__(self, width, height)
+# Add 'calculate_area' (width * height) and 'calculate_perimeter' (2 * (width + height))
+# Create an instance and test both methods
 # Write your code here:
 
 
-# TODO 4: Add a method called 'get_result' that returns self.result
-# This method doesn't need any parameters (besides self)
+# TODO 12-13: Create a Counter class with increment/decrement/reset operations
+# Define Counter with count initialized to 0
+# Add methods: increment(), decrement(), reset(), get_count()
+# Create an instance, increment 5 times, decrement 2 times, print, reset, print again
 # Write your code here:
 
 
-# TODO 5: Create a Calculator instance
-# Call add(10), add(5), then subtract(3)
-# Print the result using get_result()
-# Write your code here:
-
-
-# TODO 6: Define a class 'Circle' with __init__ taking a radius parameter
-# Store radius as an instance attribute
-# Write your code here:
-
-
-# TODO 7: Add a method 'calculate_area' to Circle
-# It should return the area: 3.14159 * radius * radius
-# Write your code here:
-
-
-# TODO 8: Add a method 'calculate_circumference' to Circle
-# It should return: 2 * 3.14159 * radius
-# Write your code here:
-
-
-# TODO 9: Create a Circle instance with radius 5
-# Call both methods and print the area and circumference
-# Write your code here:
-
-
-# TODO 10: Define a class 'Rectangle' with __init__ taking width and height
-# Add a method 'calculate_area' that returns width * height
-# Add a method 'calculate_perimeter' that returns 2 * (width + height)
-# Write your code here:
-
-
-# TODO 11: Create a Rectangle instance
-# Call both methods and print the results
-# Write your code here:
-
-
-# TODO 12: Define a class 'Counter' with:
-# - __init__ initializing count to 0
-# - method 'increment' that adds 1 to count
-# - method 'decrement' that subtracts 1 from count
-# - method 'reset' that sets count back to 0
-# - method 'get_count' that returns the current count
-# Write your code here:
-
-
-# TODO 13: Create a Counter instance
-# Increment it 5 times, decrement it 2 times
-# Print the count, reset it, and print again
-# Write your code here:
-
-
-# BONUS TODO: Create a 'Temperature' class that stores a temperature in Celsius
-# Add methods to convert to Fahrenheit and Kelvin
-# Create an instance and test the conversion methods
+# BONUS TODO: Create a Temperature class for unit conversions
+# Store a temperature in Celsius; add methods to convert to Fahrenheit and Kelvin
+# Create an instance and test both conversion methods
 # Write your code here:

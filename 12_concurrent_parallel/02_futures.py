@@ -15,94 +15,36 @@ Complete this program to learn about working with futures.
 import time
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED, ALL_COMPLETED
 
-# TODO 1: Create a function 'slow_task' that:
-# - Takes task_id and duration parameters
-# - Sleeps for the specified duration
-# - Returns "Task {task_id} completed after {duration} seconds"
+# TODO 1-4: Explore the lifecycle of a Future from submission to completion
+# Suggested pieces: slow_task(task_id, duration) and a small executor workflow.
+# Show what changes when work is pending, when a result is retrieved, and when a timeout occurs.
 # Write your code here:
 
 
-# TODO 2: Create a ThreadPoolExecutor
-# Submit a slow_task with duration=2
-# Check if the future is done immediately (it shouldn't be)
-# Use future.done()
+# TODO 5-8: Compare callback-driven and wait-based coordination
+# Suggested pieces: task_completed_callback(future), several submitted tasks, and both FIRST_COMPLETED and ALL_COMPLETED cases.
+# Focus on how the program learns that work is finished and when it chooses to handle results.
 # Write your code here:
 
 
-# TODO 3: Wait for the future to complete using result()
-# Check if it's done after calling result()
-# Print the result
+# TODO 9-10: Build a small concurrent website-status checker
+# Suggested piece: check_website(url) plus a batch of URLs.
+# Surface completion order and timing so learners can see that finished work may arrive out of submission order.
 # Write your code here:
 
 
-# TODO 4: Submit a task and use a timeout when getting the result
-# Use future.result(timeout=1) with a task that takes 2 seconds
-# Catch TimeoutError and print a message
+# TODO 11: Investigate what cancellation can and cannot do for futures
+# Use one example where work has not started yet and one where work is already running.
+# Highlight the difference between direct cancellation and cooperative stop signaling.
 # Write your code here:
 
 
-# TODO 5: Create a callback function 'task_completed_callback'
-# It should take a future as parameter
-# Print "Callback: Task completed with result: {future.result()}"
+# TODO 12-13: Model batch-oriented work with per-batch result handling
+# Suggested piece: process_batch(batch_id, items) returning a batch summary.
+# Emphasize coordinating several batches, applying time limits, and deciding what to do with unfinished work.
 # Write your code here:
 
 
-# TODO 6: Submit a task and add the callback to it
-# Use future.add_done_callback(callback_function)
-# Wait for the task to complete
-# Write your code here:
-
-
-# TODO 7: Submit multiple tasks with different durations
-# Use wait() with return_when=FIRST_COMPLETED
-# Print which task completed first
-# Hint: done, not_done = wait(futures, return_when=FIRST_COMPLETED)
-# Write your code here:
-
-
-# TODO 8: Submit multiple tasks
-# Use wait() with return_when=ALL_COMPLETED
-# Process all results after they're all done
-# Write your code here:
-
-
-# TODO 9: Create a function 'check_website' that simulates checking a website
-# Takes a url parameter
-# Sleeps for random time (0.5 to 2 seconds)
-# Returns "Website {url} is up"
-# Write your code here:
-
-
-# TODO 10: Submit checks for multiple websites concurrently
-# Use as_completed to process results as they finish
-# Print results with timestamps to show order of completion
-# Hint: Use time.time() to get timestamps
-# Write your code here:
-
-
-# TODO 11: Investigate cancellation limits
-# Submit one task, cancel it before it starts, and inspect the return value.
-# Then submit a slow task (5+ seconds), wait for 1 second, and try cancel().
-# A Future cannot cancel a task that is already running. Use a threading.Event
-# to show cooperative cancellation for the running task.
-# Check both the return value of future.cancel() and future.cancelled().
-# Write your code here:
-
-
-# TODO 12: Create a function 'process_batch' that:
-# - Takes a batch_id and list of items
-# - Processes each item (simulate with sleep)
-# - Returns the number of items processed
-# Write your code here:
-
-
-# TODO 13: Submit multiple batch processing tasks
-# Get results with a timeout for each
-# If timeout occurs, cancel remaining tasks
-# Write your code here:
-
-
-# BONUS TODO: Create a progress tracking system
-# Submit multiple tasks, periodically check how many are done
-# Print progress percentage every second until all complete
+# BONUS TODO: Add lightweight progress reporting for a set of futures
+# Report how much of the workload has finished over time without prescribing a specific display style.
 # Write your code here:

@@ -15,96 +15,30 @@ Complete this program to learn about async gathering and coordination.
 import asyncio
 import random
 
-# TODO 1: Create async functions for different operations
-# Define 'fetch_weather', 'fetch_news', 'fetch_stocks'
-# Each takes 1-2 seconds and returns data
+# TODO 1-2: Gather several independent async operations at once
+# Suggested pieces: fetch_weather(), fetch_news(), and fetch_stocks().
+# Make the individual coroutine signatures visible, then show how one await point can collect all of their results.
 # Write your code here:
 
 
-# TODO 2: Use gather() to fetch all data concurrently
-# Hint: results = await asyncio.gather(fetch_weather(), fetch_news(), fetch_stocks())
-# Print all results
+# TODO 3-5: Explore how gather behaves when some coroutines fail
+# Use one task that can raise and compare default gather behavior with return_exceptions-style collection.
+# Focus on what the caller receives back in each case.
 # Write your code here:
 
 
-# TODO 3: Create an async function that sometimes fails
-# Define 'unreliable_fetch' that randomly raises an exception
-# Use random.random() < 0.5 to decide
+# TODO 6-10: Compare several result-collection strategies
+# Include mixed result types, argument unpacking, a scatter-gather pattern, a gather-versus-wait comparison, and a timeout-aware example.
+# Emphasize the orchestration differences rather than the exact helper code.
 # Write your code here:
 
 
-# TODO 4: Use gather() without return_exceptions (default)
-# If any task fails, gather raises the exception immediately
-# Use try-except to handle it
-# Write your code here:
-
-
-# TODO 5: Use gather() with return_exceptions=True
-# Failed tasks return exceptions as values
-# Check each result to see if it's an exception
-# Hint: results = await asyncio.gather(*tasks, return_exceptions=True)
-#       if isinstance(result, Exception):
-# Write your code here:
-
-
-# TODO 6: Gather results with different return types
-# Some coroutines return strings, some return numbers
-# Collect all results in a list
-# Write your code here:
-
-
-# TODO 7: Use gather with unpacking
-# Pass multiple coroutines as arguments
-# Hint: await asyncio.gather(*[coro() for _ in range(5)])
-# Write your code here:
-
-
-# TODO 8: Implement scatter-gather pattern
-# Scatter: Send requests to multiple services
-# Gather: Collect all responses
-# Write your code here:
-
-
-# TODO 9: Use asyncio.gather() vs asyncio.wait()
-# gather: Returns results in order
-# wait: Returns done and pending sets
-# Compare both approaches
-# Write your code here:
-
-
-# TODO 10: Implement timeout for gather()
-# Use asyncio.wait_for() to wrap gather() with timeout
-# Write your code here:
-
-
-# TODO 11: Create a fan-out/fan-in pattern
-# Fan-out: Split work into multiple tasks
-# Fan-in: Combine results from all tasks
-# Write your code here:
-
-
-# TODO 12: Gather nested coroutines
-# Coroutines that themselves use gather
-# Create a hierarchy of async operations
-# Write your code here:
-
-
-# TODO 13: Process results as they complete with as_completed
-# Instead of waiting for all, process each as it finishes
-# Hint: for coro in asyncio.as_completed([coro1(), coro2(), coro3()]):
-# Write your code here:
-
-
-# TODO 14: Implement partial failure handling
-# Continue with successful results even if some tasks fail
-# Use return_exceptions=True and filter results
+# TODO 11-14: Process many coroutines with richer completion logic
+# Cover fan-out/fan-in, nested coroutine gathering, handling results as they complete, and partial-failure recovery.
+# Show the stage or helper names you choose so the flow is easy to follow.
 # Write your code here:
 
 
 # BONUS TODO: Create an async aggregator
-# Fetches data from multiple sources concurrently
-# Combines and processes all results
-# Handles failures gracefully
-# Returns aggregated result
+# Focus on collecting results from multiple sources and combining them into one structured outcome.
 # Write your code here:
-

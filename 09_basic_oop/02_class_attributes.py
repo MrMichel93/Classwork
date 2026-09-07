@@ -17,78 +17,34 @@ Complete this program to learn about class vs instance attributes.
 # Expect: every Car reports 4 wheels; BankAccount starts with "Python Bank";
 # making a Student increases Student.total_students.
 
-# TODO 1: Define a class called 'Car' with a class attribute
-# Add a class attribute 'wheels' set to 4 (all cars have 4 wheels)
-# Also add an __init__ method with parameters: make, model
-# Hint: class Car:
-#           wheels = 4
-#           def __init__(self, make, model):
+# TODO 1-5: Create a Car class with class and instance attributes
+# Define Car with class attribute 'wheels' = 4
+# Add __init__(self, make, model) for instance attributes
+# Create two Car instances and print wheels (should be 4 for both)
+# Print make/model for each (should be different)
+# Also access wheels through the class name (Car.wheels)
+# Hint: class Car: wheels = 4; def __init__(self, make, model):
 # Write your code here:
 
 
-# TODO 2: Create two Car instances with different makes and models
-# Example: car1 = Car("Toyota", "Camry")
+# TODO 6-9: Create a BankAccount class with shared and unique attributes
+# Define BankAccount with class attribute 'bank_name' = "Python Bank"
+# Add instance attributes: account_holder, balance
+# Create two instances and print bank_name (same) and account holders (different)
+# Change the class attribute and observe it affects all instances
 # Write your code here:
 
 
-# TODO 3: Print the wheels attribute for both cars
-# Access it using car1.wheels and car2.wheels
-# Notice they both have 4 wheels (shared class attribute)
-# Write your code here:
-
-
-# TODO 4: Print the make and model for both cars
-# These are instance attributes (different for each car)
-# Write your code here:
-
-
-# TODO 5: Access the class attribute using the class name
-# Print Car.wheels
-# Write your code here:
-
-
-# TODO 6: Define a class 'BankAccount' with:
-# - Class attribute 'bank_name' = "Python Bank"
-# - Instance attributes: account_holder, balance (set in __init__)
-# Write your code here:
-
-
-# TODO 7: Create two BankAccount instances with different holders and balances
-# Write your code here:
-
-
-# TODO 8: Print the bank_name for both accounts (should be the same)
-# Print the account holders (should be different)
-# Write your code here:
-
-
-# TODO 9: Change the class attribute through the class
-# Set BankAccount.bank_name = "New Python Bank"
-# Print the bank_name from both account instances
-# Notice how it changes for all instances
-# Write your code here:
-
-
-# TODO 10: Create a class 'Student' with:
-# - Class attribute 'school' = "Python High School"
-# - Class attribute 'total_students' = 0 (we'll increment this)
-# - Instance attributes: name, grade (from __init__)
-# Write your code here:
-
-
-# TODO 11: Modify the __init__ method to increment total_students
-# Each time a Student is created, add 1 to Student.total_students
+# TODO 10-12: Create a Student class that tracks total enrollment
+# Define Student with class attributes: 'school' = "Python High School", 'total_students' = 0
+# Add instance attributes: name, grade
+# In __init__, increment Student.total_students by 1 for each new student
+# Create three instances and print Student.total_students (should be 3)
 # Hint: Student.total_students += 1
 # Write your code here:
 
 
-# TODO 12: Create three Student instances
-# Print Student.total_students after creating all three
-# It should show 3
-# Write your code here:
-
-
-# BONUS TODO: Create a class that tracks the number of instances created
-# Use a class attribute as a counter
-# Create several instances and print the total count
+# BONUS TODO: Create a counter class
+# Use a class attribute to count how many instances have been created
+# Create several instances and display the total count
 # Write your code here:

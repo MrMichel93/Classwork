@@ -18,65 +18,55 @@ Complete this program by creating various mathematical functions.
 # - Confirm absolute_value(-15) returns 15 and is_positive distinguishes positive and negative values.
 # - Confirm radius 5 circle calculations and find_max_of_three(15, 23, 19) are correct.
 
-# TODO 1: Define a function called 'find_max' that takes two parameters: a and b
-# It should return the larger of the two numbers
-# Hint: Use an if statement
+# TODO 1-2: Create comparison functions
+# Build 'find_max' and 'find_min' functions that each take two parameters
+# Return the larger and smaller value respectively
+# Hint: def find_max(a, b): return ... and def find_min(a, b): return ...
 # Write your code here:
 
 
-# TODO 2: Define a function called 'find_min' that takes two parameters: a and b
-# It should return the smaller of the two numbers
+# TODO 3: Test your comparison functions with 15 and 23
 # Write your code here:
 
 
-# TODO 3: Test find_max and find_min with the numbers 15 and 23
-# Print both results
+# TODO 4: Create an averaging function
+# Build 'calculate_average' that takes two parameters and returns their average
 # Write your code here:
 
 
-# TODO 4: Define a function called 'calculate_average' that takes two parameters
-# It should return the average of the two numbers
+# TODO 5: Create a sign-checking function
+# Build 'is_positive' that returns True for positive numbers, False otherwise
 # Write your code here:
 
 
-# TODO 5: Define a function called 'is_positive' that takes one parameter: number
-# It should return True if the number is positive, False otherwise
+# TODO 6: Create an absolute value function
+# Build 'absolute_value' that takes a number and returns its positive equivalent
+# Hint: def absolute_value(number): and use an if statement
 # Write your code here:
 
 
-# TODO 6: Define a function called 'absolute_value' that takes one parameter
-# It should return the absolute value of the number (always positive)
-# Hint: If the number is negative, return its negative (which makes it positive)
+# TODO 7: Test absolute_value with -15
 # Write your code here:
 
 
-# TODO 7: Test absolute_value with -15 and print the result
-# Write your code here:
-
-
-# TODO 8: Define a function called 'calculate_circle_area' that takes one parameter: radius
-# It should return the area of a circle (pi * radius * radius)
+# TODO 8-9: Create circle calculation functions
+# Build 'calculate_circle_area' and 'calculate_circle_circumference' (both take radius)
 # Use 3.14159 for pi
+# Hint: Area = pi * r * r and Circumference = 2 * pi * r
 # Write your code here:
 
 
-# TODO 9: Define a function called 'calculate_circle_circumference' that takes radius
-# It should return the circumference (2 * pi * radius)
+# TODO 10: Test both circle functions with radius=5
 # Write your code here:
 
 
-# TODO 10: Test both circle functions with a radius of 5
-# Print both results with descriptive labels
+# TODO 11: Create a max-of-three function
+# Build 'find_max_of_three' using the 'find_max' function you already created
+# Hint: def find_max_of_three(a, b, c): return find_max(find_max(a, b), c)
 # Write your code here:
 
 
-# TODO 11: Define a function called 'find_max_of_three' that takes three parameters
-# It should return the largest of the three numbers
-# Hint: You can use the find_max function you already created
-# Write your code here:
-
-
-# BONUS TODO: Define a function called 'calculate_bmi' that takes two parameters:
-# weight_kg and height_m
-# It should return the BMI (Body Mass Index): weight / (height * height)
+# BONUS TODO: Create a BMI calculator function
+# Build 'calculate_bmi' that takes weight_kg and height_m
+# Hint: def calculate_bmi(weight_kg, height_m): return weight_kg / (height_m * height_m)
 # Write your code here:

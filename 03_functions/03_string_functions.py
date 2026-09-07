@@ -18,65 +18,33 @@ Complete this program by creating functions that manipulate and analyze strings.
 # - Confirm repeat_string("Python", 3) returns "PythonPythonPython".
 # - Confirm get_initials("John", "Doe") returns "J.D." and count_vowels("Python") returns 1.
 
-# TODO 1: Define a function called 'make_uppercase' that takes one parameter: text
-# It should return the text converted to uppercase
-# Hint: Use the .upper() method
+# TODO 1-3: Create basic text helper functions
+# Build functions that change case and report string length.
+# Hint: def make_uppercase(text): return ...
+# Hint: def make_lowercase(text): return ... and def get_length(text): return ...
 # Write your code here:
 
 
-# TODO 2: Define a function called 'make_lowercase' that takes one parameter: text
-# It should return the text converted to lowercase
+# TODO 4-5: Try the first helper functions
+# Call the functions with the sample text values and print their results.
+# Hint: print(make_uppercase("hello world")) and print(get_length("Python Programming"))
 # Write your code here:
 
 
-# TODO 3: Define a function called 'get_length' that takes one parameter: text
-# It should return the length of the text
-# Hint: Use the len() function
+# TODO 6-8: Create and test string-building helpers
+# Build functions that add emphasis or repeat text, then test them with sample values.
+# Hint: def add_exclamation(text): return ... and def repeat_string(text, times): return ...
 # Write your code here:
 
 
-# TODO 4: Call make_uppercase with "hello world" and print the result
+# TODO 9-11: Create and test string-analysis helpers
+# Build functions for initials and vowel counting, then print example results.
+# Hint: def get_initials(first_name, last_name): return ...
+# Hint: def count_vowels(text): return ...
 # Write your code here:
 
 
-# TODO 5: Call get_length with "Python Programming" and print the result
-# Write your code here:
-
-
-# TODO 6: Define a function called 'add_exclamation' that takes one parameter: text
-# It should return the text with an exclamation mark added at the end
-# Write your code here:
-
-
-# TODO 7: Define a function called 'repeat_string' that takes two parameters:
-# text and times
-# It should return the text repeated 'times' number of times
-# Hint: You can multiply strings by numbers in Python: "hi" * 3 = "hihihi"
-# Write your code here:
-
-
-# TODO 8: Call repeat_string with "Python" and 3, print the result
-# Write your code here:
-
-
-# TODO 9: Define a function called 'get_initials' that takes two parameters:
-# first_name and last_name
-# It should return the initials in uppercase (first letter of each name + period)
-# Example: "John", "Doe" should return "J.D."
-# Write your code here:
-
-
-# TODO 10: Test get_initials with your name
-# Write your code here:
-
-
-# TODO 11: Define a function called 'count_vowels' that takes one parameter: text
-# It should return the count of vowels (a, e, i, o, u) in the text
-# Hint: Convert to lowercase first, then count each vowel
-# Write your code here:
-
-
-# BONUS TODO: Define a function called 'reverse_string' that takes one parameter
-# and returns the string reversed
-# Hint: You can use string slicing [::-1]
+# BONUS TODO: Add a reverse-string helper
+# Create a function that returns a string in reverse order.
+# Hint: def reverse_string(text): return ...
 # Write your code here:

@@ -15,90 +15,30 @@ Complete this program to learn about thread locks.
 import threading
 import time
 
-# TODO 1: Create a function demonstrating Lock usage
-# Create a lock and use it to protect a critical section
-# Use both lock.acquire()/release() and with statement
+# TODO 1-4: Compare basic locks and reentrant locks
+# Suggested pieces: a simple critical-section example and a recursive function that benefits from an RLock.
+# Show the target signatures or helper names so the learner can see the intended structure at a glance.
 # Write your code here:
 
 
-# TODO 2: Demonstrate Lock non-reentrant behavior
-# Try to acquire the same lock twice in the same thread
-# This will cause a deadlock (comment out after demonstrating)
-# Hint:
-# lock = threading.Lock()
-# lock.acquire()
-# lock.acquire()  # This will block forever!
+# TODO 5-6: Protect a small shared object with a lock
+# Suggested piece: a BankAccount-style class with methods such as deposit(...) and withdraw(...).
+# Focus on preserving consistent state when several threads use the object at once.
 # Write your code here:
 
 
-# TODO 3: Create an RLock (Reentrant Lock)
-# RLock can be acquired multiple times by the same thread
-# Demonstrate acquiring it multiple times
+# TODO 7-10: Explore practical lock usage patterns
+# Include a reader/writer-style scenario, timed lock acquisition, a non-blocking acquisition attempt, and lock state inspection.
+# Emphasize what information or guarantees each pattern gives the program.
 # Write your code here:
 
 
-# TODO 4: Create a function that uses RLock recursively
-# Example: A recursive function that needs to maintain a lock
+# TODO 11-13: Design higher-level lock policies
+# Cover priority-aware access, a two-phase workflow, and one fairness-oriented lock idea.
+# Keep the hints conceptual so learners decide how to represent waiting threads and turn-taking.
 # Write your code here:
 
 
-# TODO 5: Implement a Bank Account class with Lock
-# Methods: deposit, withdraw, get_balance
-# All methods should be thread-safe using a lock
+# BONUS TODO: Create a read-write lock abstraction
+# Suggested shape: separate reader and writer entry/exit methods or context-manager style helpers.
 # Write your code here:
-
-
-# TODO 6: Test the Bank Account with multiple threads
-# Create threads that deposit and withdraw simultaneously
-# Verify the balance is correct at the end
-# Write your code here:
-
-
-# TODO 7: Create a Reader-Writer scenario
-# Multiple threads can read simultaneously
-# Only one thread can write at a time
-# Use locks to implement this pattern
-# Write your code here:
-
-
-# TODO 8: Implement timeout for lock acquisition
-# Use lock.acquire(timeout=1)
-# Handle the case when lock cannot be acquired
-# Write your code here:
-
-
-# TODO 9: Create a function that tries to acquire a lock
-# If it can't acquire immediately, it does something else
-# Use lock.acquire(blocking=False)
-# Write your code here:
-
-
-# TODO 10: Demonstrate lock.locked() method
-# Check if a lock is currently held
-# Write your code here:
-
-
-# TODO 11: Create a priority lock system
-# Threads with higher priority should acquire lock first
-# Use a custom implementation with conditions
-# Write your code here:
-
-
-# TODO 12: Implement a two-phase locking protocol
-# Acquire all locks before starting work
-# Release all locks after completing work
-# Prevents deadlocks in complex scenarios
-# Write your code here:
-
-
-# TODO 13: Create a fair lock implementation
-# Ensure threads get the lock in FIFO order
-# Use a queue and condition variable
-# Write your code here:
-
-
-# BONUS TODO: Implement a read-write lock class
-# Allow multiple readers or one writer
-# Use RLock and counters to track readers
-# Write your code here:
-

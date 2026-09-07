@@ -18,140 +18,58 @@ Complete this program exploring polymorphism and interface patterns.
 # Expect: a circle plus 3-by-4 rectangle area is about 15.14159; PayPal processes
 # through PaymentProcessor; Bicycle.start() reports beginning to pedal.
 
-# TODO 1: Create a Shape base class (interface-like)
-# Methods: area(), perimeter(), describe()
-# These should return 0 or "Unknown shape" (will be overridden)
+# TODO 1-4: Create a Shape interface-like hierarchy and use polymorphism
+# Build Shape with area(), perimeter(), and describe()
+# Build Circle, Rectangle, and Triangle as Shape subclasses with their own formulas and descriptions
+# Create a mixed list of shapes and a calculate_total_area(shapes) function that works with all of them
+# Keep formula hints without full implementations, such as width * height and 3.14159 * radius * radius
+# Hint: class Shape: def area(self): ... / def perimeter(self): ... / def describe(self): ...
+# Hint: def calculate_total_area(shapes): ...
 # Write your code here:
 
 
-# TODO 2: Create Circle, Rectangle, Triangle classes
-# All inherit from Shape
-# Override area() and perimeter() with proper formulas
-# Override describe() with specific descriptions
+# TODO 5-8: Create a payment interface and processor
+# Build Payment with process_payment(amount), refund(amount), and get_details()
+# Build CreditCard, PayPal, and Bitcoin to provide payment-specific behavior
+# Build PaymentProcessor with process_transaction(payment_method, amount)
+# Create several payment objects and process transactions through the shared interface
+# Hint: class Payment: def process_payment(self, amount): ...
+# Hint: class PaymentProcessor: def process_transaction(self, payment_method, amount): ...
 # Write your code here:
 
 
-# TODO 3: Demonstrate polymorphism
-# Create list of different shapes
-# Loop through and call area() on each
-# Even though they're different classes, same method name works!
+# TODO 9-11: Create an Animal hierarchy and a Zoo manager
+# Build Animal with make_sound(), move(), and eat()
+# Build Dog, Cat, Bird, and Fish with distinct sound and movement behavior
+# Build Zoo with add_animal(animal), feed_all_animals(), and make_all_sounds()
+# Use the zoo to show the same method calls working across different animal types
+# Hint: class Zoo: def add_animal(self, animal): ...
 # Write your code here:
 
 
-# TODO 4: Create a function that works with any shape
-# def calculate_total_area(shapes):
-#     # Calculate sum of areas for all shapes
-# This demonstrates polymorphism - function works with any Shape subclass
+# TODO 12-15: Create database abstractions and a duck-typed notifier example
+# Build Database with connect(), disconnect(), query(sql), and insert(data)
+# Build MySQLDatabase, PostgreSQLDatabase, and SQLiteDatabase with database-specific behavior
+# Build DataManager with migrate_data(source_db, target_db) that works with any database implementation
+# Build notifier classes such as EmailNotifier, SMSNotifier, and PushNotifier that all provide send(message)
+# Create a function that accepts any object with a send(message) method and uses it without requiring inheritance
+# Hint: class Database: def query(self, sql): ...
+# Hint: class DataManager: def migrate_data(self, source_db, target_db): ...
+# Hint: def notify_user(notifier, message): ...
 # Write your code here:
 
 
-# TODO 5: Create a Payment interface (base class)
-# Methods: process_payment(amount), refund(amount), get_details()
+# TODO 16-18: Create a Vehicle hierarchy and traffic simulator
+# Build Vehicle with start(), stop(), accelerate(speed), and brake()
+# Build Car, Motorcycle, Truck, and Bicycle with vehicle-specific behavior while keeping the same interface
+# Build TrafficSimulator with add_vehicle(vehicle), start_all(), and simulate_traffic()
+# Ensure Bicycle.start() represents beginning to pedal rather than engine ignition
+# Hint: class Vehicle: def accelerate(self, speed): ...
+# Hint: class TrafficSimulator: def simulate_traffic(self): ...
 # Write your code here:
 
 
-# TODO 6: Create payment method classes
-# CreditCard, PayPal, Bitcoin - all inherit from Payment
-# Each implements process_payment() differently
-# Write your code here:
-
-
-# TODO 7: Create a PaymentProcessor class
-# Method: process_transaction(payment_method, amount)
-# Works with any Payment subclass (polymorphism)
-# Write your code here:
-
-
-# TODO 8: Test payment processing with different methods
-# Create instances of different payment types
-# Process payments using PaymentProcessor
-# Demonstrate same interface, different behavior
-# Write your code here:
-
-
-# TODO 9: Create an Animal base class
-# Methods: make_sound(), move(), eat()
-# Write your code here:
-
-
-# TODO 10: Create specific animal classes
-# Dog, Cat, Bird, Fish - all inherit from Animal
-# Each overrides methods with specific behaviors
-# Dog: "Bark", "Run"
-# Cat: "Meow", "Walk"
-# Bird: "Chirp", "Fly"
-# Fish: "Bubble", "Swim"
-# Write your code here:
-
-
-# TODO 11: Create a Zoo class
-# Manages list of animals
-# Methods:
-# - add_animal(animal)
-# - feed_all_animals() - calls eat() on each
-# - make_all_sounds() - calls make_sound() on each
-# Demonstrates polymorphism with different animals
-# Write your code here:
-
-
-# TODO 12: Create a Database interface
-# Methods: connect(), disconnect(), query(sql), insert(data)
-# Write your code here:
-
-
-# TODO 13: Create specific database implementations
-# MySQLDatabase, PostgreSQLDatabase, SQLiteDatabase
-# Each implements methods differently
-# Simulate different connection strings and behaviors
-# Write your code here:
-
-
-# TODO 14: Create a DataManager class
-# Works with any Database subclass
-# Method: migrate_data(source_db, target_db)
-# Reads from source, writes to target
-# Works regardless of database type (polymorphism)
-# Write your code here:
-
-
-# TODO 15: Demonstrate duck typing
-# Create classes that don't inherit from same base but have same methods
-# If it walks like a duck and quacks like a duck...
-# Create: EmailNotifier, SMSNotifier, PushNotifier
-# All have send(message) method
-# Create function that works with any notifier
-# Write your code here:
-
-
-# TODO 16: Create a Vehicle base class
-# Methods: start(), stop(), accelerate(speed), brake()
-# Write your code here:
-
-
-# TODO 17: Create vehicle type classes with different behaviors
-# Car, Motorcycle, Truck, Bicycle
-# Each implements methods differently
-# Bicycle implements start() as beginning to pedal so every Vehicle satisfies
-# the same interface.
-# Write your code here:
-
-
-# TODO 18: Create a TrafficSimulator
-# Manages multiple vehicles
-# Methods:
-# - add_vehicle(vehicle)
-# - start_all()
-# - simulate_traffic()
-# Calls methods on all vehicles polymorphically
-# Write your code here:
-
-
-# BONUS TODO: Create a plugin system
-# Design a Plugin base class with load(), execute(), unload()
-# Create several plugin implementations
-# Create PluginManager that:
-# - Loads plugins dynamically
-# - Executes plugins
-# - Works with any plugin type
-# This demonstrates real-world polymorphism use case
+# BONUS TODO: Create a plugin system that relies on polymorphism
+# Build Plugin with load(), execute(), and unload(), then create multiple plugin implementations
+# Build PluginManager to work with any plugin object through the shared interface
 # Write your code here:
