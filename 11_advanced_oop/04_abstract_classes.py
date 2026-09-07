@@ -15,95 +15,36 @@ Complete this program to learn about abstract classes.
 # First, import the ABC module
 from abc import ABC, abstractmethod
 
-# TODO 1: Define an abstract class 'Shape' that inherits from ABC
-# Add an abstract method 'area' (no implementation, just pass)
-# Hint: class Shape(ABC):
-#           @abstractmethod
-#           def area(self):
-#               pass
+# TODO 1-7: Create a Shape abstract base class and concrete shape implementations
+# Build Shape(ABC) with abstract methods area() and perimeter()
+# Show that Shape cannot be instantiated directly by catching the TypeError
+# Build Rectangle and Circle as concrete subclasses with their own initializers and geometry methods
+# Create instances and call area() and perimeter() on each
+# Hint: class Shape(ABC): @abstractmethod def area(self): ...
+# Hint: class Rectangle(Shape): def __init__(self, width, height): ...
+# Hint: class Circle(Shape): def __init__(self, radius): ...
 # Write your code here:
 
 
-# TODO 2: Add another abstract method 'perimeter' to Shape
+# TODO 8-12: Create an Animal abstract base class and use polymorphism
+# Build Animal(ABC) with abstract methods make_sound() and move()
+# Build Dog and Bird with distinct implementations
+# Create a describe_animal(animal) function that works with any Animal subclass
+# Test the function with multiple animal objects
+# Hint: class Animal(ABC): ...
+# Hint: def describe_animal(animal): ...
 # Write your code here:
 
 
-# TODO 3: Try to create an instance of Shape
-# Use try-except to catch the TypeError
-# Print the error message (you can't instantiate abstract classes)
+# TODO 13-15: Create a PaymentMethod abstract base class with shared validation
+# Build PaymentMethod(ABC) with abstract process_payment(amount) and concrete validate_amount(amount)
+# Build CreditCard and PayPal subclasses that process payments in their own way
+# Create instances and test both valid and invalid payment amounts
+# Hint: class PaymentMethod(ABC): def validate_amount(self, amount): ...
 # Write your code here:
 
 
-# TODO 4: Define a concrete class 'Rectangle' that inherits from Shape
-# Implement both abstract methods: area and perimeter
-# __init__ should take width and height
+# BONUS TODO: Create a Database abstract base class and concrete implementations
+# Define abstract operations such as connect(), disconnect(), query(sql), and insert(data)
+# Build at least two database subclasses with their own behavior
 # Write your code here:
-
-
-# TODO 5: Create a Rectangle instance
-# Call both area() and perimeter() methods
-# Write your code here:
-
-
-# TODO 6: Define another concrete class 'Circle' that inherits from Shape
-# Implement both abstract methods
-# __init__ should take radius
-# Write your code here:
-
-
-# TODO 7: Create a Circle instance
-# Call both methods
-# Write your code here:
-
-
-# TODO 8: Define an abstract class 'Animal' with abstract methods:
-# - 'make_sound' (no parameters besides self)
-# - 'move' (no parameters besides self)
-# Write your code here:
-
-
-# TODO 9: Create concrete classes 'Dog' and 'Bird' that inherit from Animal
-# Implement the abstract methods differently for each
-# Dog: "Woof!" and "Running"
-# Bird: "Chirp!" and "Flying"
-# Write your code here:
-
-
-# TODO 10: Create instances of Dog and Bird
-# Call their methods to see the different implementations
-# Write your code here:
-
-
-# TODO 11: Create a function 'describe_animal' that takes an Animal parameter
-# Call both make_sound() and move() on the animal
-# This demonstrates polymorphism with abstract classes
-# Write your code here:
-
-
-# TODO 12: Test the describe_animal function with different animals
-# Pass both Dog and Bird instances
-# Write your code here:
-
-
-# TODO 13: Define an abstract class 'PaymentMethod' with:
-# - Abstract method 'process_payment' taking an amount
-# - Concrete method 'validate_amount' that checks if amount > 0
-# Write your code here:
-
-
-# TODO 14: Create concrete classes 'CreditCard' and 'PayPal'
-# Implement the abstract process_payment method differently
-# Use the inherited validate_amount method
-# Write your code here:
-
-
-# TODO 15: Create instances and test payment processing
-# Try to process a payment with valid and invalid amounts
-# Write your code here:
-
-
-# BONUS TODO: Create an abstract class 'Database' with abstract methods:
-# connect, disconnect, query, insert
-# Create concrete implementations: 'MySQLDatabase' and 'PostgreSQLDatabase'
-# Write your code here:
-

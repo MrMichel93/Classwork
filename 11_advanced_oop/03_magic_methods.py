@@ -12,92 +12,44 @@ Instructions:
 Complete this program to learn about magic methods in Python.
 """
 
-# TODO 1: Define a class 'Book' with __init__ taking: title, author, pages
-# Override __str__ to return a formatted string: "Title by Author (X pages)"
-# Hint: def __str__(self):
-#           return f"{self.title} by {self.author} ({self.pages} pages)"
+# TODO 1-6: Create a Book class with representation and comparison magic methods
+# Build Book with __init__(title, author, pages)
+# Implement __str__ for a reader-friendly display and __repr__ for a developer-friendly representation
+# Implement __eq__ so books compare by title and author
+# Create Book instances and demonstrate print(), repr(), and == behavior
+# Hint: class Book: def __init__(self, title, author, pages): ...
+# Hint: def __str__(self): ...
+# Hint: def __repr__(self): ...
+# Hint: def __eq__(self, other): ...
 # Write your code here:
 
 
-# TODO 2: Create a Book instance and print it
-# See how __str__ provides a nice string representation
+# TODO 7-10: Create a Vector class with arithmetic operator overloading
+# Build Vector with x and y coordinates
+# Implement __add__ to combine two vectors and __mul__ for scalar multiplication
+# Keep the operator hints: Vector(self.x + other.x, self.y + other.y) and Vector(self.x * scalar, self.y * scalar)
+# Create vector examples and print the results of addition and multiplication
+# Hint: class Vector: def __add__(self, other): ...
+# Hint: def __mul__(self, scalar): ...
 # Write your code here:
 
 
-# TODO 3: Override __repr__ in Book
-# It should return a string that could recreate the object
-# Example: "Book('Title', 'Author', 300)"
-# Hint: def __repr__(self):
+# TODO 11-12: Create a Rectangle class with comparison operators
+# Build Rectangle with width and height
+# Implement __lt__ and __gt__ so rectangles compare by area
+# Create several rectangles, compare them, and sort a list of them
+# Hint: class Rectangle: def __lt__(self, other): ...
 # Write your code here:
 
 
-# TODO 4: Test __repr__ by using repr() on a Book instance
+# TODO 13-14: Create a ShoppingCart class that behaves like a container
+# Build ShoppingCart with an internal items list
+# Implement __len__, __getitem__, and __contains__ so the cart works with len(), indexing, and the in operator
+# Add sample items and demonstrate each magic method in use
+# Hint: class ShoppingCart: def __len__(self): ...
 # Write your code here:
 
 
-# TODO 5: Override __eq__ in Book to compare books by title and author
-# Two books are equal if they have the same title and author
-# Hint: def __eq__(self, other):
-#           return self.title == other.title and self.author == other.author
+# BONUS TODO: Create a 2x2 Matrix class with arithmetic magic methods
+# Implement __add__, __mul__, and __str__ to support matrix operations and readable output
 # Write your code here:
-
-
-# TODO 6: Create two Book instances with the same title and author
-# Test if they are equal using ==
-# Write your code here:
-
-
-# TODO 7: Define a class 'Vector' representing a 2D vector with x and y
-# Override __add__ to add two vectors
-# Return a new Vector with the sum of x and y coordinates
-# Hint: def __add__(self, other):
-#           return Vector(self.x + other.x, self.y + other.y)
-# Write your code here:
-
-
-# TODO 8: Create two Vector instances and add them using +
-# Example: v1 = Vector(1, 2), v2 = Vector(3, 4), v3 = v1 + v2
-# Print the result
-# Write your code here:
-
-
-# TODO 9: Override __mul__ in Vector for scalar multiplication
-# Multiply the vector by a number
-# Example: Vector(2, 3) * 2 should give Vector(4, 6)
-# Write your code here:
-
-
-# TODO 10: Test vector multiplication
-# Write your code here:
-
-
-# TODO 11: Define a class 'Rectangle' with width and height
-# Override __lt__ (less than) to compare rectangles by area
-# Override __gt__ (greater than) to compare by area
-# Write your code here:
-
-
-# TODO 12: Create several Rectangle instances
-# Compare them using < and > operators
-# Sort a list of rectangles
-# Write your code here:
-
-
-# TODO 13: Define a class 'ShoppingCart' with:
-# - __init__ creating an empty items list
-# - __len__ returning the number of items
-# - __getitem__ to access items by index
-# - __contains__ to check if an item exists (for 'in' operator)
-# Write your code here:
-
-
-# TODO 14: Test the ShoppingCart magic methods
-# Add items, use len(), access items with [], use 'in' operator
-# Write your code here:
-
-
-# BONUS TODO: Create a class 'Matrix' representing a 2x2 matrix
-# Implement __add__, __mul__ (matrix multiplication), and __str__
-# Test matrix operations
-# Write your code here:
-

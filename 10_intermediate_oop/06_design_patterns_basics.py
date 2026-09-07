@@ -14,174 +14,77 @@ Complete this introduction to design patterns. This is the most
 challenging intermediate OOP program!
 """
 
-# TODO 1: Implement Singleton pattern
-# Create a DatabaseConnection class that:
-# - Only allows one instance to exist
-# - Returns same instance on multiple creations
-# - Store instance as class variable
-# - Override __new__ method
+# TODO 1-2: Implement and demonstrate the Singleton pattern
+# Build DatabaseConnection so repeated construction returns the same instance
+# Keep the __new__ hint without providing the full implementation
+# Create multiple instances and verify they refer to the same object with the is operator
+# Hint: class DatabaseConnection: def __new__(cls, *args, **kwargs): ...
 # Write your code here:
 
 
-# TODO 2: Test Singleton pattern
-# Try to create multiple instances
-# Verify they're all the same object (use 'is' operator)
+# TODO 3-4: Implement and demonstrate the Factory pattern
+# Build ShapeFactory with create_shape(shape_type) to return the appropriate shape object
+# Support shape types such as circle, rectangle, and triangle without exposing creation details to the caller
+# Hint: class ShapeFactory: def create_shape(self, shape_type): ...
 # Write your code here:
 
 
-# TODO 3: Implement Factory pattern
-# Create a ShapeFactory class
-# Method: create_shape(shape_type) returns appropriate shape object
-# shape_type can be 'circle', 'rectangle', 'triangle'
-# Factory decides which class to instantiate
+# TODO 5-7: Implement and demonstrate the Observer pattern
+# Build WeatherStation with temperature state plus attach(observer), detach(observer), notify(), and set_temperature(temp)
+# Build observer classes such as PhoneDisplay, WebDisplay, and EmailAlert with update(temperature)
+# Create a station, attach observers, and show them reacting when the temperature changes
+# Hint: class WeatherStation: def set_temperature(self, temp): ...
 # Write your code here:
 
 
-# TODO 4: Test Factory pattern
-# Use factory to create different shapes
-# User doesn't need to know about specific shape classes
+# TODO 8-10: Implement and demonstrate the Strategy pattern
+# Build SortStrategy with sort(data), then create multiple strategy classes with different sorting behavior
+# Build Sorter with set_strategy(strategy) and sort_data(data) so the active algorithm can change at runtime
+# Create one sorter and run the same data through different strategies
+# Hint: class Sorter: def sort_data(self, data): ...
 # Write your code here:
 
 
-# TODO 5: Implement Observer pattern - Subject class
-# Create a WeatherStation class (the subject)
-# Attributes: temperature, observers (list)
-# Methods:
-# - attach(observer) - add observer
-# - detach(observer) - remove observer
-# - notify() - notify all observers of change
-# - set_temperature(temp) - update temp and notify
+# TODO 11-12: Implement and demonstrate the Builder pattern
+# Build Computer and ComputerBuilder so a computer can be assembled step by step
+# Include configuration methods such as set_cpu(cpu), set_ram(ram), set_storage(storage), set_gpu(gpu), and build()
+# Create multiple finished computer configurations to show the builder's flexibility
+# Hint: class ComputerBuilder: def build(self): ...
 # Write your code here:
 
 
-# TODO 6: Implement Observer pattern - Observer classes
-# Create observer classes:
-# - PhoneDisplay - displays on phone
-# - WebDisplay - displays on website
-# - EmailAlert - sends email if temp extreme
-# Each has update(temperature) method
+# TODO 13-14: Implement and demonstrate the Adapter pattern
+# Build OldPrinter with print_document(text) and NewPrinter with print(text, color, duplex)
+# Build PrinterAdapter so code expecting the old interface can still use a new printer
+# Create a function that depends on the old interface and pass it an adapted new printer
+# Hint: class PrinterAdapter: def print_document(self, text): ...
 # Write your code here:
 
 
-# TODO 7: Test Observer pattern
-# Create weather station
-# Create and attach multiple observers
-# Change temperature
-# See all observers get notified automatically
+# TODO 15-16: Implement and demonstrate the Decorator pattern
+# Build Coffee with cost() and description()
+# Build decorators such as MilkDecorator, SugarDecorator, and WhipDecorator that wrap a coffee object
+# Keep the focus on dynamically adding features and updating both cost and description
+# Hint: class MilkDecorator: def cost(self): ... / def description(self): ...
 # Write your code here:
 
 
-# TODO 8: Implement Strategy pattern
-# Create different sorting strategies
-# Base class: SortStrategy with method sort(data)
-# Implementations: BubbleSort, QuickSort, MergeSort
+# TODO 17-18: Implement and demonstrate the Command pattern
+# Build a Command base class with execute() and undo()
+# Build command objects for device actions and a RemoteControl that stores and runs commands
+# Configure the remote, execute commands, and demonstrate undo behavior
+# Hint: class RemoteControl: ...
 # Write your code here:
 
 
-# TODO 9: Create Sorter class that uses strategies
-# Attributes: strategy (SortStrategy)
-# Methods:
-# - set_strategy(strategy)
-# - sort_data(data) - uses current strategy
-# Can change strategy at runtime
+# TODO 19-20: Implement and demonstrate the State pattern
+# Build a VendingMachine with state objects such as NoMoneyState, HasMoneyState, and DispensingState
+# Let each state define how actions like insertMoney() and selectItem() behave
+# Create a machine, perform actions, and show how the response changes as the current state changes
+# Hint: class VendingMachine: ...
 # Write your code here:
 
 
-# TODO 10: Test Strategy pattern
-# Create sorter
-# Try different strategies on same data
-# Show that behavior changes based on strategy
+# BONUS TODO: Combine several patterns in one small application
+# Use a few patterns together, such as Singleton, Factory, Observer, and Strategy, to show how they complement each other
 # Write your code here:
-
-
-# TODO 11: Implement Builder pattern
-# Create a Computer class with many optional components
-# Create ComputerBuilder class with methods:
-# - set_cpu(cpu)
-# - set_ram(ram)
-# - set_storage(storage)
-# - set_gpu(gpu)
-# - build() - returns configured Computer
-# Allows step-by-step object construction
-# Write your code here:
-
-
-# TODO 12: Test Builder pattern
-# Build different computer configurations
-# Show how builder makes complex object creation easier
-# Write your code here:
-
-
-# TODO 13: Implement Adapter pattern
-# Create OldPrinter class with method print_document(text)
-# Create NewPrinter class with method print(text, color, duplex)
-# Create PrinterAdapter that adapts NewPrinter to OldPrinter interface
-# Write your code here:
-
-
-# TODO 14: Test Adapter pattern
-# Create function that works with OldPrinter interface
-# Use adapter to make NewPrinter work with old interface
-# Write your code here:
-
-
-# TODO 15: Implement Decorator pattern
-# Create a Coffee class with cost() and description()
-# Create decorator classes:
-# - MilkDecorator
-# - SugarDecorator
-# - WhipDecorator
-# Each adds to cost and description
-# Decorators wrap Coffee objects
-# Write your code here:
-
-
-# TODO 16: Test Decorator pattern
-# Create plain coffee
-# Add decorators dynamically
-# Each decorator adds features without modifying Coffee class
-# Write your code here:
-
-
-# TODO 17: Implement Command pattern
-# Create Command base class with execute() and undo()
-# Create specific commands:
-# - LightOnCommand, LightOffCommand
-# - FanHighCommand, FanLowCommand
-# Create RemoteControl class that stores and executes commands
-# Write your code here:
-
-
-# TODO 18: Test Command pattern
-# Configure remote with different commands
-# Execute commands
-# Demonstrate undo functionality
-# Write your code here:
-
-
-# TODO 19: Implement State pattern
-# Create a VendingMachine with states:
-# - NoMoneyState
-# - HasMoneyState
-# - DispensingState
-# Each state handles insertMoney(), selectItem() differently
-# Machine changes state based on actions
-# Write your code here:
-
-
-# TODO 20: Test State pattern
-# Create vending machine
-# Perform various actions
-# See how behavior changes based on state
-# Write your code here:
-
-
-# BONUS TODO: Combine multiple patterns
-# Create a complete application that uses:
-# - Singleton for configuration manager
-# - Factory for creating different types of users
-# - Observer for notification system
-# - Strategy for different authentication methods
-# This demonstrates how patterns work together!
-# Write your code here:
-

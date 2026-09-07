@@ -12,83 +12,39 @@ Instructions:
 Complete this program to learn about multiple inheritance.
 """
 
-# TODO 1: Define a class 'Flyable' with a method 'fly'
-# The fly method should print "Flying through the air"
+# TODO 1-4: Create capability mixins and combine them in Duck
+# Build Flyable with fly() and Swimmable with swim()
+# Build Duck(Flyable, Swimmable) with __init__(name)
+# Create a Duck instance and demonstrate both inherited capabilities
+# Hint: class Duck(Flyable, Swimmable): def __init__(self, name): ...
 # Write your code here:
 
 
-# TODO 2: Define a class 'Swimmable' with a method 'swim'
-# The swim method should print "Swimming in water"
+# TODO 5-7: Create another multiple-inheritance example with Dog
+# Build Walkable with walk()
+# Build Dog(Walkable, Swimmable) with __init__(name)
+# Create a Dog instance, use the supported abilities, and observe what capability it does not inherit
+# Hint: class Dog(Walkable, Swimmable): def __init__(self, name): ...
 # Write your code here:
 
 
-# TODO 3: Define a class 'Duck' that inherits from both Flyable and Swimmable
-# Hint: class Duck(Flyable, Swimmable):
-# Add an __init__ method that takes 'name'
+# TODO 8-10: Create a HybridCar that combines two fuel-system behaviors
+# Build Electric with charge() and Gasoline with refuel()
+# Build HybridCar(Electric, Gasoline) with __init__(model)
+# Create a HybridCar instance and show that it can use both behaviors
+# Hint: class HybridCar(Electric, Gasoline): def __init__(self, model): ...
 # Write your code here:
 
 
-# TODO 4: Create a Duck instance
-# Call both fly() and swim() methods
-# Notice how Duck has capabilities from both parent classes
+# TODO 11-13: Create a TechLead role and inspect method resolution order
+# Build Developer with write_code() and Manager with manage_team()
+# Build TechLead(Developer, Manager) and demonstrate both role behaviors
+# Print HybridCar.__mro__ to examine the order Python searches for inherited methods
+# Hint: class TechLead(Developer, Manager): ...
 # Write your code here:
 
 
-# TODO 5: Define a class 'Walkable' with a method 'walk'
-# The walk method should print "Walking on land"
+# BONUS TODO: Create a larger multiple-inheritance example using capability classes
+# Combine several small behavior classes into one object and demonstrate each inherited feature
+# Hint: class FileManager(Readable, Writable, Executable, Deletable): ...
 # Write your code here:
-
-
-# TODO 6: Define a class 'Dog' that inherits from Walkable and Swimmable
-# Dogs can walk and swim, but not fly
-# Add an __init__ method that takes 'name'
-# Write your code here:
-
-
-# TODO 7: Create a Dog instance
-# Call walk() and swim() methods
-# Try to call fly() - it should cause an error (dogs don't fly!)
-# Write your code here:
-
-
-# TODO 8: Define two classes: 'Electric' and 'Gasoline'
-# Electric has method 'charge' that prints "Charging battery"
-# Gasoline has method 'refuel' that prints "Filling gas tank"
-# Write your code here:
-
-
-# TODO 9: Define a class 'HybridCar' that inherits from both Electric and Gasoline
-# Add an __init__ method that takes 'model'
-# Write your code here:
-
-
-# TODO 10: Create a HybridCar instance
-# Call both charge() and refuel() methods
-# This represents a car with both capabilities
-# Write your code here:
-
-
-# TODO 11: Define classes for different employee roles:
-# - 'Developer' with method 'write_code'
-# - 'Manager' with method 'manage_team'
-# Then create 'TechLead' that inherits from both
-# Write your code here:
-
-
-# TODO 12: Create a TechLead instance
-# Call both write_code() and manage_team()
-# This represents someone with both technical and managerial skills
-# Write your code here:
-
-
-# TODO 13: Use the __mro__ attribute to see the method resolution order
-# Print HybridCar.__mro__ to understand the order Python searches for methods
-# Write your code here:
-
-
-# BONUS TODO: Create a complex multiple inheritance scenario
-# Define 4 different capability classes (like Readable, Writable, Executable, Deletable)
-# Create a class that inherits from multiple capabilities
-# Demonstrate using all inherited methods
-# Write your code here:
-
