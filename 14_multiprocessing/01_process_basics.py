@@ -16,90 +16,29 @@ import multiprocessing
 import os
 import time
 
-# TODO 1: Create a simple function 'print_info' that:
-# - Prints the process name using multiprocessing.current_process().name
-# - Prints the process ID using os.getpid()
-# - Prints the parent process ID using os.getppid()
+# TODO 1-4: Introduce process creation with one reusable worker function
+# Suggested piece: print_info() that reports process identity information.
+# Compare calling it in the main process with running it in one or several child processes.
 # Write your code here:
 
 
-# TODO 2: Run print_info in the main process
-# Observe the process information
+# TODO 5-7: Pass data and names into processes
+# Suggested piece: calculate_square(number) or another small pure function, plus custom process names.
+# Make the target signatures visible so learners can see how arguments travel into child processes.
 # Write your code here:
 
 
-# TODO 3: Create a process to run print_info
-# Use multiprocessing.Process(target=print_info)
-# Start the process using process.start()
-# Wait for it using process.join()
+# TODO 8-12: Explore the lifecycle and control surface of a Process
+# Include waiting with join(), checking alive state, inspecting exit status, terminating work, and using daemon processes.
+# Focus on what each control tells you about a running or finished child process.
 # Write your code here:
 
 
-# TODO 4: Create multiple processes running the same function
-# Create 3 processes
-# Start all of them
-# Notice they have different process IDs
+# TODO 13: Size parallel work using the available CPU count
+# Suggested structure: query the machine capacity, then launch a matching set of independent workers.
 # Write your code here:
 
 
-# TODO 5: Create a function 'calculate_square' that:
-# - Takes a number as parameter
-# - Prints the number and its square
-# - Sleeps for 1 second
+# BONUS TODO: Add a long-running worker that can stop gracefully
+# Contrast cooperative shutdown with forceful termination at a conceptual level.
 # Write your code here:
-
-
-# TODO 6: Create processes with arguments
-# Create 5 processes calculating squares of different numbers
-# Hint: multiprocessing.Process(target=calculate_square, args=(5,))
-# Write your code here:
-
-
-# TODO 7: Set custom process names
-# Create processes with the name parameter
-# Hint: multiprocessing.Process(target=func, name="CustomName")
-# Write your code here:
-
-
-# TODO 8: Demonstrate the difference with and without join()
-# Without join: Main process may finish before child processes
-# With join: Main process waits for child processes
-# Write your code here:
-
-
-# TODO 9: Check if a process is alive
-# Create a process that runs for 3 seconds
-# Check process.is_alive() before, during, and after execution
-# Write your code here:
-
-
-# TODO 10: Get the exit code of a process
-# Use process.exitcode
-# None: still running, 0: successful, other: error code
-# Write your code here:
-
-
-# TODO 11: Terminate a process
-# Create a long-running process
-# Use process.terminate() to stop it
-# Check if it's still alive after termination
-# Write your code here:
-
-
-# TODO 12: Create daemon processes
-# Daemon processes automatically terminate when main process exits
-# Set daemon=True when creating the process
-# Write your code here:
-
-
-# TODO 13: Get the number of CPU cores
-# Use multiprocessing.cpu_count()
-# Create that many processes for parallel work
-# Write your code here:
-
-
-# BONUS TODO: Create a worker process that runs a loop
-# Use a flag or signal to gracefully stop the process
-# Compare with terminate() which is forceful
-# Write your code here:
-

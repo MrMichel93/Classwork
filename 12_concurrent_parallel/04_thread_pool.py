@@ -16,95 +16,36 @@ import time
 from concurrent.futures import ThreadPoolExecutor
 import threading
 
-# TODO 1: Create a function 'fetch_data' that simulates fetching data
-# Takes a url parameter
-# Sleeps for 1 second (simulating network delay)
-# Returns "Data from {url}"
+# TODO 1-3: Compare sequential and thread-pool handling of I/O-shaped work
+# Suggested piece: fetch_data(url) -> str.
+# Use the same workload in both styles so learners can see when a ThreadPoolExecutor improves responsiveness.
 # Write your code here:
 
 
-# TODO 2: Fetch data from 5 URLs sequentially
-# Measure and print the time (should be ~5 seconds)
+# TODO 4-5: Inspect how a thread pool reuses worker threads
+# Suggested piece: get_thread_info(task_id) -> str.
+# Make the output reveal task identity and thread identity without prescribing the exact formatting.
 # Write your code here:
 
 
-# TODO 3: Use ThreadPoolExecutor to fetch data concurrently
-# Create a list of 5 URLs
-# Use executor.map() to fetch all concurrently
-# Measure and print the time (should be ~1 second)
+# TODO 6-7: Demonstrate a shared-state race and then protect it
+# Suggested pieces: a shared counter and a lock-aware update path.
+# Focus on why thread coordination matters when several tasks touch the same state.
 # Write your code here:
 
 
-# TODO 4: Create a function 'get_thread_info' that:
-# - Takes a task_id
-# - Returns the thread name using threading.current_thread().name
-# - Returns a message with task_id and thread name
+# TODO 8-9: Use the pool for a larger batch of independent file-style tasks
+# Suggested piece: process_file(file_name) -> result summary.
+# Keep the scenario conceptual: many small jobs, limited workers, collected results.
 # Write your code here:
 
 
-# TODO 5: Submit multiple tasks to see different threads being used
-# Use max_workers=3 to limit the thread pool size
-# Submit 10 tasks and print thread names
+# TODO 10-13: Model an API workload with concurrency controls
+# Suggested piece: api_call(endpoint) -> response summary, plus a rate-limiting or producer-consumer layer.
+# Emphasize safe throughput and coordination rather than step-by-step implementation details.
 # Write your code here:
 
 
-# TODO 6: Create a shared counter variable
-# Create a function 'increment_counter' that increments it
-# WARNING: This will have race conditions (we'll fix this later)
-# Submit 100 tasks to increment the counter
-# Print the final value (may not be 100!)
+# BONUS TODO: Build a priority-aware thread-pool workflow
+# Surface the idea that not every task must be treated equally when work enters the system.
 # Write your code here:
-
-
-# TODO 7: Fix the race condition using a threading.Lock
-# Create a lock object
-# Modify increment_counter to use the lock
-# Now the final value should be exactly 100
-# Write your code here:
-
-
-# TODO 8: Create a function 'process_file' that simulates file processing
-# Takes a filename
-# Sleeps for 0.5 seconds (simulating I/O)
-# Returns "Processed {filename}"
-# Write your code here:
-
-
-# TODO 9: Process 20 files using ThreadPoolExecutor
-# Experiment with different max_workers values (1, 5, 10, 20)
-# Measure and compare execution times
-# Write your code here:
-
-
-# TODO 10: Create a function 'api_call' that:
-# - Takes an endpoint name
-# - Sleeps for random time between 0.5 and 2 seconds
-# - Returns response data
-# Write your code here:
-
-
-# TODO 11: Make 10 API calls concurrently
-# Handle any potential exceptions
-# Use try-except in a wrapper function
-# Write your code here:
-
-
-# TODO 12: Implement a rate limiter
-# Create a function that can only be called N times per second
-# Use threading.Semaphore to limit concurrent calls
-# Write your code here:
-
-
-# TODO 13: Create a producer-consumer pattern
-# Producer: Generate work items
-# Consumer: Process work items using ThreadPoolExecutor
-# Use a queue to pass work between them
-# Write your code here:
-
-
-# BONUS TODO: Create a thread pool that processes tasks in priority order
-# Tasks have different priorities
-# Higher priority tasks should be processed first
-# Use a priority queue and ThreadPoolExecutor
-# Write your code here:
-

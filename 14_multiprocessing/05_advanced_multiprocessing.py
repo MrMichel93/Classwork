@@ -16,110 +16,30 @@ Complete this program exploring advanced multiprocessing.
 from multiprocessing import Process, Queue, Pool, Manager, Value, Array
 import time
 
-# TODO 1: Implement producer-consumer with multiple processes
-# Multiple producer processes
-# Multiple consumer processes
-# Use multiprocessing.Queue
+# TODO 1-3: Practice core multiprocessing patterns on larger workflows
+# Include a multi-process producer-consumer system, a shared counter, and a map-reduce style computation.
+# Show the worker signatures or stage boundaries so the design is easy to follow.
 # Write your code here:
 
 
-# TODO 2: Create shared counter with processes
-# Multiple processes increment shared counter
-# Use Value for shared memory
-# Use Lock for synchronization
+# TODO 4-6: Explore pool callbacks and richer shared state
+# Combine one callback-based result flow with at least one Array-based or Manager-based shared structure.
+# Focus on what coordination happens after a worker finishes, not only while it runs.
 # Write your code here:
 
 
-# TODO 3: Implement map-reduce with process pool
-# Distribute work across processes
-# Collect and reduce results
-# Handle large datasets
+# TODO 7-10: Design process-oriented coordination architectures
+# Include a pipeline, a dynamically sized pool or workforce, a work-distribution strategy, and an event-style communication system.
+# Emphasize movement of tasks and results through the system.
 # Write your code here:
 
 
-# TODO 4: Create process pool with result callbacks
-# Submit tasks to pool
-# Register callbacks for results
-# Handle errors in callbacks
+# TODO 11-14: Add resilience and observability to process-based programs
+# Cover file processing, checkpoint or restart ideas, parallel search, and process monitoring.
+# Highlight what the program should be able to recover from or report.
 # Write your code here:
 
 
-# TODO 5: Implement shared memory array
-# Create shared array using Array
-# Multiple processes read/write
-# Synchronize access properly
+# BONUS TODO: Sketch a distributed task queue
+# Keep the focus on queue roles, worker coordination, and fault-tolerant task handling.
 # Write your code here:
-
-
-# TODO 6: Create manager-based shared data structures
-# Use Manager for shared dict and list
-# Multiple processes update concurrently
-# Demonstrate data sharing
-# Write your code here:
-
-
-# TODO 7: Implement pipeline with processes
-# Multi-stage pipeline
-# Each stage in separate process
-# Use queues to connect stages
-# Write your code here:
-
-
-# TODO 8: Create dynamic process pool
-# Start with minimum processes
-# Scale based on workload
-# Shutdown idle processes
-# Write your code here:
-
-
-# TODO 9: Implement work distribution pattern
-# Master process distributes work
-# Worker processes execute tasks
-# Collect results back to master
-# Write your code here:
-
-
-# TODO 10: Create process-based event system
-# Processes communicate via events
-# Support broadcasting
-# Handle process-safe signaling
-# Write your code here:
-
-
-# TODO 11: Implement parallel file processing
-# Process multiple files in parallel
-# Each file processed by separate process
-# Aggregate results
-# Write your code here:
-
-
-# TODO 12: Create checkpoint/restart system
-# Long-running computation
-# Save checkpoints to shared memory
-# Restart from checkpoint on failure
-# Write your code here:
-
-
-# TODO 13: Implement parallel search algorithm
-# Search large dataset
-# Distribute across processes
-# Return first match
-# Cancel other processes when found
-# Write your code here:
-
-
-# TODO 14: Create process monitoring system
-# Monitor CPU and memory usage
-# Track process states
-# Collect statistics
-# Write your code here:
-
-
-# BONUS TODO: Build distributed task queue
-# Master-worker architecture
-# Task distribution across processes
-# Result collection
-# Fault tolerance
-# Load balancing
-# Write your code here:
-

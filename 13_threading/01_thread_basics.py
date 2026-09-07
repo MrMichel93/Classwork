@@ -15,91 +15,36 @@ Complete this program to learn the basics of threading.
 import threading
 import time
 
-# TODO 1: Create a simple function 'print_numbers' that:
-# - Prints numbers 1 to 5
-# - Sleeps for 0.5 seconds between each number
-# - Prints the thread name for each iteration
-# Hint: Use threading.current_thread().name
+# TODO 1-4: Introduce thread creation by reusing one simple worker function
+# Suggested piece: print_numbers() with visible timing and thread-name output.
+# Compare calling it directly, running it on one thread, and running it on two threads at once.
 # Write your code here:
 
 
-# TODO 2: Run print_numbers in the main thread
-# Observe the sequential execution
+# TODO 5-6: Pass arguments into thread targets
+# Suggested piece: print_letters(letter) so each thread can do similar work with different input.
+# Make the thread setup easy to read by showing the target signature.
 # Write your code here:
 
 
-# TODO 3: Create a thread to run print_numbers
-# Use threading.Thread(target=print_numbers)
-# Start the thread using thread.start()
+# TODO 7-8: Show why joining threads changes program behavior
+# Build one example where the main thread waits and one where it does not.
+# Focus on the observable difference in completion order rather than the mechanics of the loop.
 # Write your code here:
 
 
-# TODO 4: Create two threads running print_numbers simultaneously
-# Start both threads
-# See how they execute concurrently
+# TODO 9-10: Give threads clearer identities and responsibilities
+# Suggested piece: worker(worker_id) that announces when it starts and finishes.
+# Use names or IDs so learners can match each message to the correct thread.
 # Write your code here:
 
 
-# TODO 5: Create a function 'print_letters' that:
-# - Takes a letter parameter
-# - Prints the letter 5 times with 0.5 second delays
+# TODO 11-13: Inspect the lifecycle of active and daemon threads
+# Include one example using is_alive(), one using threading.enumerate(), and one daemon-thread example.
+# Emphasize what the runtime can tell you about currently running work.
 # Write your code here:
 
 
-# TODO 6: Create multiple threads with different arguments
-# Pass different letters to each thread
-# Hint: threading.Thread(target=print_letters, args=('A',))
+# BONUS TODO: Add a long-running background thread example
+# Keep the focus on why a daemon-style background worker does not block program exit.
 # Write your code here:
-
-
-# TODO 7: Use thread.join() to wait for threads to complete
-# Create 3 threads
-# Start all of them
-# Call join() on each to wait for completion
-# Print "All threads completed" at the end
-# Write your code here:
-
-
-# TODO 8: Demonstrate the difference with and without join()
-# Without join: Main thread finishes before worker threads
-# With join: Main thread waits for worker threads
-# Write your code here:
-
-
-# TODO 9: Set custom thread names
-# Create threads with name parameter
-# Hint: threading.Thread(target=func, name="CustomName")
-# Write your code here:
-
-
-# TODO 10: Create a function 'worker' that takes a worker_id
-# The function should print start message, work for 2 seconds, print done message
-# Create 3 worker threads with different IDs
-# Write your code here:
-
-
-# TODO 11: Check if a thread is alive
-# Create a thread, start it
-# Print thread.is_alive() before and after it completes
-# Write your code here:
-
-
-# TODO 12: Get all active threads
-# Create several threads
-# Use threading.enumerate() to list all threads
-# Print the count and names of active threads
-# Write your code here:
-
-
-# TODO 13: Create daemon threads
-# Daemon threads automatically terminate when main program exits
-# Create a thread with daemon=True
-# Compare behavior with regular threads
-# Write your code here:
-
-
-# BONUS TODO: Create a thread that runs indefinitely
-# Make it a daemon thread so it doesn't prevent program exit
-# Use a while loop and check for termination condition
-# Write your code here:
-
