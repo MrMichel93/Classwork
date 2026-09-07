@@ -13,6 +13,13 @@ Complete this program to practice reading files safely.
 Note: Some TODOs require you to create sample files first.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_08_exceptions_files
+# - Confirm sample.txt can be read in full, line by line, as one line, and as a list of lines.
+# - Confirm safe_read_file returns content for an existing file and None for a missing file.
+# - Confirm numbers.txt sums its one-number-per-line values correctly.
+# - Self-checks use temporary files; do not alter course files.
+
 # TODO 1: Create a simple text file called 'sample.txt' with a few lines
 # You can do this manually or use code (shown below)
 # Uncomment and run the following to create the file:
@@ -83,4 +90,3 @@ Note: Some TODOs require you to create sample files first.
 # in a text file. Test it with 'sample.txt'
 # Hint: Split each line by spaces and count
 # Write your code here:
-

@@ -12,6 +12,13 @@ Instructions:
 Complete this program to practice writing to files.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_08_exceptions_files
+# - Confirm output.txt contains the first line and then the appended line without losing either.
+# - Confirm fruits.txt has one item per line and write_list_to_file writes [1, 2, 3, 4, 5] one per line.
+# - Confirm person.txt has readable key-value pairs and r+ appends after reading.
+# - Self-checks use temporary files; do not alter course files.
+
 # TODO 1: Create a new file called 'output.txt' and write one line to it
 # Use 'w' mode (write mode - creates new file or overwrites existing)
 # Write the line: "This is the first line"
@@ -86,4 +93,3 @@ Complete this program to practice writing to files.
 # timestamped messages to a file called 'log.txt'
 # Hint: Use datetime module for timestamps
 # Write your code here:
-

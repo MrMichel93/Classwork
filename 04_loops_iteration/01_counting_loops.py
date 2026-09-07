@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice basic loop structures and counting.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_04_loops_iteration
+# - Confirm the first loops print 1 through 10, 0 through 9, and even numbers through 20.
+# - Confirm the sum from 1 to 100 is 5050.
+# - Confirm the multiplication table ends with "5 x 10 = 50" and square numbers include 100.
+
 # TODO 1: Use a for loop to print numbers from 1 to 10
 # Hint: for i in range(1, 11):
 # Write your code here:
@@ -57,4 +63,3 @@ Complete this program to practice basic loop structures and counting.
 # BONUS TODO: Use nested for loops to print a multiplication table from 1x1 to 5x5
 # Format it nicely in rows and columns
 # Write your code here:
-

@@ -12,6 +12,12 @@ Instructions:
 Complete this grade checker program that assigns letter grades based on scores.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_02_conditionals
+# - With score 85, confirm the program prints "Grade: B".
+# - Test 95, 77, 65, and 45 to confirm A, C, D, and F branches.
+# - Test -5 and 110 to confirm invalid scores are handled before grade branches.
+
 # TODO 1: Create a variable 'score' and set it to 85
 # Write your code here:
 
@@ -55,4 +61,3 @@ Complete this grade checker program that assigns letter grades based on scores.
 # BONUS TODO: Add a check that prints "Perfect score!" if score equals 100
 # This should happen in addition to printing the grade
 # Write your code here:
-

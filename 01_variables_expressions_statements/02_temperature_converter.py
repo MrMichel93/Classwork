@@ -13,6 +13,12 @@ Complete this temperature conversion program. Convert temperatures between
 Fahrenheit, Celsius, and Kelvin using the formulas provided.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_01_variables_expressions_statements
+# - Confirm 25.0 C converts to 77.0 F and 298.15 K.
+# - Confirm 98.6 F converts to about 37.0 C.
+# - Try 0 C and 100 C to check freezing and boiling conversions.
+
 # Temperature conversion formulas:
 # Celsius to Fahrenheit: F = (C * 9/5) + 32
 # Fahrenheit to Celsius: C = (F - 32) * 5/9
@@ -62,4 +68,3 @@ Fahrenheit, Celsius, and Kelvin using the formulas provided.
 # BONUS TODO: Calculate the difference between water's freezing point (0°C)
 # and boiling point (100°C) in Fahrenheit. Store and print the result.
 # Write your code here:
-

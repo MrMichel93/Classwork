@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice string formatting techniques.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_05_strings
+# - Confirm the Alice sentence and "Total cost: $59.97" use f-strings.
+# - Confirm pi is displayed as 3.14, score as 87.50%, and 1234567 as 1,234,567.
+# - Confirm 25 C displays as 77.0 F and the box has a single space between Hello and World.
+
 # TODO 1: Create variables name = "Alice" and age = 25
 # Use an f-string to print: "My name is Alice and I am 25 years old"
 # Hint: f"My name is {name} and I am {age} years old"
@@ -76,4 +82,3 @@ Complete this program to practice string formatting techniques.
 # Total: $1188.53
 # Format all prices with $ and 2 decimal places
 # Write your code here:
-

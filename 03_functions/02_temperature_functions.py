@@ -12,6 +12,12 @@ Instructions:
 Complete this program by creating temperature conversion functions.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_03_functions
+# - Confirm celsius_to_fahrenheit converts 0 to 32 and 100 to 212.
+# - Confirm fahrenheit_to_celsius converts 98.6 to approximately 37.
+# - Confirm fahrenheit_to_kelvin(32) returns 273.15 by reusing the earlier functions.
+
 # TODO 1: Define a function called 'celsius_to_fahrenheit' that takes
 # one parameter: celsius
 # It should return the temperature in Fahrenheit using the formula: (celsius * 9/5) + 32
@@ -71,4 +77,3 @@ Complete this program by creating temperature conversion functions.
 # in Celsius and prints the temperature in all three scales (C, F, K)
 # Use the conversion functions you already created
 # Write your code here:
-

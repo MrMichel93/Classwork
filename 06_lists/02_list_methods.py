@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice using list methods.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_06_lists
+# - Confirm yellow is appended, purple is inserted, blue is removed, and yellow is popped.
+# - Confirm numbers sort then reverse to [9, 8, 5, 3, 2, 1], with 9 at index 0.
+# - Confirm changing an animals copy does not change the original and extend produces [1, 2, 3, 4, 5, 6].
+
 # TODO 1: Create a list 'colors' with ["red", "blue", "green"]
 # Write your code here:
 
@@ -82,4 +88,3 @@ Complete this program to practice using list methods.
 # BONUS TODO: Clear all elements from a list using clear() method
 # Show that the list becomes empty
 # Write your code here:
-

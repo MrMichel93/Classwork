@@ -81,8 +81,10 @@ challenging strings program!
 # TODO 8: Create a palindrome checker and generator
 # word = "racecar"
 # Check if it's a palindrome
-# Then, generate all single-character modifications that would make a non-palindrome into a palindrome
-# Example: "race" -> could become "racer" -> "racear" (not a palindrome), try other positions
+# Then, generate all single-character substitutions that would make a
+# non-palindrome into a palindrome.
+# Example: "race" -> "racc" by replacing the last character with "c"
+# Define whether you want every result or only the first result found.
 # Write your code here:
 
 
@@ -147,9 +149,9 @@ challenging strings program!
 # word2 = "sitting"
 # Calculate the minimum number of single-character edits needed to change word1 to word2
 # Edits: insertions, deletions, or substitutions
-# This is complex! Use a counting approach:
-# - Count positions where characters differ
-# - Count length difference
+# This is complex! Use dynamic programming:
+# - Build a table whose cells hold the smallest edit distance for prefixes
+# - At each cell, consider insertion, deletion, and substitution
 # Print the edit distance
 # Write your code here:
 
@@ -191,4 +193,3 @@ challenging strings program!
 # Suggest the best correction
 # This is very challenging!
 # Write your code here:
-

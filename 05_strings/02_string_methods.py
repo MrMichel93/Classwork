@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice using string methods.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_05_strings
+# - Confirm the text prints as uppercase and title case, and the phrase strips to "Hello World".
+# - Confirm text starts with "python", ends with "ing", and finds "programming" at index 7.
+# - Confirm replacement, splitting, joining, and counting "o" all produce the expected results.
+
 # TODO 1: Create a string 'text' with the value "python programming"
 # Write your code here:
 
@@ -76,4 +82,3 @@ Complete this program to practice using string methods.
 # Convert it to all lowercase, then to all uppercase, then to title case
 # Print each transformation
 # Write your code here:
-

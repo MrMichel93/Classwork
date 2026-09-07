@@ -12,6 +12,12 @@ Instructions:
 Complete this program to create various patterns using loops.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_04_loops_iteration
+# - Confirm the right triangle grows from one to five asterisks.
+# - Confirm the numbered triangle ends with 12345 and the square has hollow middle rows.
+# - Confirm the alternating pattern is *-*-*-*-*-.
+
 # TODO 1: Use a for loop to print 10 asterisks in a row: **********
 # Write your code here:
 
@@ -74,4 +80,3 @@ Complete this program to create various patterns using loops.
 # *********
 # Hint: You need spaces before the stars, and the number of stars increases oddly
 # Write your code here:
-

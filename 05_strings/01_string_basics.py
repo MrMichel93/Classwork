@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice basic string operations.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_05_strings
+# - Confirm "Hello, Python!" prints its first character H, last character !, and length 14.
+# - Confirm the first five characters are Hello, the last seven are Python!, and full_name is John Doe.
+# - Confirm the middle two characters of Python are th and the message reverses correctly.
+
 # TODO 1: Create a string variable 'message' with the text "Hello, Python!"
 # Write your code here:
 
@@ -66,4 +72,3 @@ Complete this program to practice basic string operations.
 # BONUS TODO: Create a string "programming" and extract every vowel from it
 # using string indexing (positions 2, 5, 6, 9)
 # Write your code here:
-

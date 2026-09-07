@@ -13,6 +13,12 @@ Complete this program that classifies people into age groups and determines
 what activities they can do.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_02_conditionals
+# - Test ages 12, 13, 20, and 65 to confirm every age-group boundary.
+# - Test 16, 18, and 21 to confirm each activity message appears at the right age.
+# - Test -1 to confirm invalid ages do not receive a normal age-group message.
+
 # TODO 1: Create a variable 'age' and set it to your age
 # Write your code here:
 
@@ -62,4 +68,3 @@ what activities they can do.
 # Check if age >= 18 AND has_id is True, then print "Can enter the club"
 # Otherwise print "Cannot enter the club"
 # Write your code here:
-

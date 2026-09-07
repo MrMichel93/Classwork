@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice basic tuple operations.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_07_tuples_sets_dictionaries
+# - Confirm coordinates prints as (10, 20, 30), unpacks to x, y, z, and has length 3.
+# - Confirm the first two colors are red and green, and blue has index 2.
+# - Confirm the one-element tuple displays as (5,) and concatenation gives (1, 2, 3, 4).
+
 # TODO 1: Create a tuple called 'coordinates' with three values: 10, 20, 30
 # Write your code here:
 
@@ -76,4 +82,3 @@ Complete this program to practice basic tuple operations.
 # points on a 2D plane: ((0, 0), (1, 2), (3, 4))
 # Access and print the y-coordinate of the second point (which is 2)
 # Write your code here:
-

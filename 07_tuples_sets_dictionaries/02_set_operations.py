@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice working with sets.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_07_tuples_sets_dictionaries
+# - Confirm adding apple twice does not duplicate it and grape is present after adding it.
+# - Confirm the union includes orange, lemon, and lime, while the intersection is only orange.
+# - Confirm banana is removed, apple membership is True, and a set removes duplicate numbers.
+
 # TODO 1: Create a set called 'fruits' with: "apple", "banana", "orange"
 # Write your code here:
 
@@ -80,4 +86,3 @@ Complete this program to practice working with sets.
 # (items that are in either set, but not in both)
 # Hint: Use set1.symmetric_difference(set2) or set1 ^ set2
 # Write your code here:
-

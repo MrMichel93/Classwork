@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn the basics of Object-Oriented Programming.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_09_basic_oop.BasicOOPSelfChecks.test_simple_class
+# Expect: Dog objects can hold their own names; Person stores a name and age;
+# Book stores title, author, and pages; Rectangle stores width and height.
+
 # TODO 1: Define a class called 'Dog'
 # Use the class keyword
 # For now, just use 'pass' in the body
@@ -85,4 +90,3 @@ Complete this program to learn the basics of Object-Oriented Programming.
 # Create a few Rectangle instances with different dimensions
 # Print their widths and heights
 # Write your code here:
-

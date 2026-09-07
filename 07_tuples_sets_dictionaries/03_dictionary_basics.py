@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice basic dictionary operations.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_07_tuples_sets_dictionaries
+# - Confirm the student dictionary gains Central High and its grade changes to 11th.
+# - Confirm 3 apples, 2 bananas, and 1 orange cost 2.85.
+# - Confirm a missing grape price defaults to 0.0 and apple-key membership is True.
+
 # TODO 1: Create a dictionary called 'student' with keys: "name", "age", "grade"
 # Values: "Alice", 15, "10th"
 # Write your code here:
@@ -80,4 +86,3 @@ Complete this program to practice basic dictionary operations.
 # Example: {"name": "Bob", "scores": [90, 85, 88], "address": {"city": "NYC", "zip": "10001"}}
 # Access and print the city from the nested dictionary
 # Write your code here:
-

@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn about class vs instance attributes.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_09_basic_oop.BasicOOPSelfChecks.test_class_attributes
+# Expect: every Car reports 4 wheels; BankAccount starts with "Python Bank";
+# making a Student increases Student.total_students.
+
 # TODO 1: Define a class called 'Car' with a class attribute
 # Add a class attribute 'wheels' set to 4 (all cars have 4 wheels)
 # Also add an __init__ method with parameters: make, model
@@ -87,4 +92,3 @@ Complete this program to learn about class vs instance attributes.
 # Use a class attribute as a counter
 # Create several instances and print the total count
 # Write your code here:
-

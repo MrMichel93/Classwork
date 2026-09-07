@@ -11,13 +11,29 @@ This repository contains **90 mini-programs** organized into 15 major topics, ea
 - Bonus challenges for advanced practice
 - Progressive difficulty from simple to challenging
 
-### ✨ What's New
-Each topic now includes **6 programs** instead of 4, with a carefully designed difficulty progression:
-- **Programs 1-2**: Foundation - Learn basic concepts with simple, guided exercises
-- **Programs 3-4**: Application - Apply concepts to realistic scenarios
-- **Programs 5-6**: Mastery - Tackle advanced, comprehensive challenges that combine multiple techniques
+### Course Tracks
 
-The new programs (05 and 06) in each topic provide advanced learners with challenging material that demonstrates real-world applications and expert-level problem-solving.
+Use the folders as a differentiated course library rather than one required,
+linear sequence:
+
+- **AP CSP core:** Complete the foundation exercises in topics 1-8. Prioritize
+  programs 01-04, procedures, lists, data analysis, and program design.
+- **AP CSA preparation:** Continue with basic OOP and selected inheritance and
+  polymorphism exercises in topics 9-10. Focus on object state, constructors,
+  methods, composition, and collections of objects.
+- **University enrichment:** Treat programs 05-06, advanced OOP, and
+  concurrency topics as opt-in challenges. They introduce algorithms, systems
+  design, and Python-specific features beyond the AP CSP curriculum.
+
+### Difficulty Labels
+
+Each topic includes six exercises with a consistent starting point:
+
+- **Programs 1-2:** Foundation - simple, guided practice.
+- **Programs 3-4:** Application - realistic combinations of the topic's core
+  ideas.
+- **Programs 5-6:** Extension - optional advanced challenges that may require
+  independent research, additional algorithms, or multiple class periods.
 
 ## 🗂️ Program Categories
 
@@ -73,7 +89,7 @@ Master decision-making in Python using if, elif, and else statements.
   - Use logical operators (and, or)
   - Apply age-based rules
 
-- **02_number_comparator.py** - Compare and analyze numbers
+- **03_number_comparator.py** - Compare and analyze numbers
   - Determine relationships between numbers
   - Practice nested if statements
   - Use comparison operators
@@ -257,6 +273,9 @@ Introduction to Object-Oriented Programming concepts.
   - Create and manage multiple instances
   - Store objects in lists
   - Iterate through and compare objects
+- **05_composition_aggregation.py** - Object composition and aggregation
+  - Model "has-a" relationships with collaborating objects
+  - Manage collections owned by another object
 
 ### 10. Intermediate OOP
 **Location:** `10_intermediate_oop/`
@@ -282,6 +301,9 @@ Advanced OOP concepts for code reuse and organization.
   - Inherit from multiple parent classes
   - Combine functionality from different sources
   - Understand method resolution order
+- **05_polymorphism_interfaces.py** - Polymorphism and interfaces
+  - Design shared behavior contracts
+  - Use different objects through the same methods
 
 ### 11. Advanced OOP
 **Location:** `11_advanced_oop/`
@@ -445,6 +467,57 @@ python 15_asyncio/01_async_basics.py
 # ... and so on
 ```
 
+### Reference Solutions and Tests
+
+Completed reference implementations are in `solutions/`, with the same topic
+and lesson filenames as the starter worksheets. They cover AP CSP core topics
+01-08 and the AP CSA-prep OOP lessons:
+
+- `09_basic_oop/01_simple_class.py` through `05_composition_aggregation.py`
+- `10_intermediate_oop/01_inheritance.py`, `02_method_overriding.py`,
+  `03_super_function.py`, and `05_polymorphism_interfaces.py`
+
+Run an individual solution directly, for example:
+
+```bash
+python solutions/03_functions/02_temperature_functions.py
+```
+
+Run the complete standard-library test suite with:
+
+```bash
+python -m unittest discover -s tests
+```
+
+That command validates the completed reference implementations in `solutions/`,
+including the AP CSA-prep OOP lessons; it does not check your worksheet work.
+Students can run their separate self-checks with:
+
+```bash
+python -m unittest discover -s starter_tests
+```
+
+See [starter_tests/README.md](starter_tests/README.md) for how those
+incomplete-until-finished checks work.
+
+### For Educators
+
+See [TEACHER_GUIDE.md](TEACHER_GUIDE.md) for a suggested AP CSP pacing
+sequence, AP CSA-prep extensions, university enrichment boundaries, and an
+assessment rubric.
+
+### Optional Enrichment
+
+See [ENRICHMENT_CATALOG.md](ENRICHMENT_CATALOG.md) to choose an advanced OOP
+or concurrency challenge with prerequisites, a timebox, and clear deliverable
+expectations.
+
+### AP CSP Companion Activities
+
+The programming sequence is supplemented by
+[ap_csp_companion/](ap_csp_companion/README.md): short activities on data
+representation, networks, cybersecurity and privacy, and computing impacts.
+
 ### Tips for Success:
 
 - ✅ **Complete programs in order** - each builds on previous concepts
@@ -456,41 +529,55 @@ python 15_asyncio/01_async_basics.py
 
 ## 📖 Learning Path
 
-### For Complete Beginners (Topics 1-6):
+### AP CSP Core
+
+Use this recommended order for the core sequence:
 
 1. **Variables, Expressions and Statements** (Foundation)
 2. **Conditionals** (Decision Making)
 3. **Loops and Iteration** (Repetition)
-4. **Strings** (Text Processing)
-5. **Lists** (Data Collections)
-6. **Functions** (Code Organization)
+4. **Functions** (Code Organization)
+5. **Strings** (Text Processing)
+6. **Lists** (Data Collections)
+7. **Tuples, Sets and Dictionaries** (Collections and Data Modeling)
+8. **Exceptions & Files** (Error Handling and Data Persistence)
 
-### For Intermediate Students (Topics 7-11):
+Programs 01-04 are the intended core exercises. Programs 05-06 are optional
+extensions, especially when they introduce recursion, advanced algorithms, or
+multi-part systems.
 
-7. **Tuples, Sets and Dictionaries** (Advanced Data Structures)
-8. **Exceptions & Files** (Error Handling & I/O)
+### AP CSA Preparation
+
 9. **Basic OOP** (Object-Oriented Basics)
 10. **Intermediate OOP** (Inheritance & Polymorphism)
-11. **Advanced OOP** (Professional OOP Patterns)
 
-### For Advanced Students (Topics 12-15):
+Use programs 01-04 in Basic OOP and selected inheritance, overriding, `super`,
+and polymorphism exercises. Reference solutions and self-checks are available
+for Basic OOP lessons 01-05 and Intermediate OOP lessons 01-03 and 05. These
+reinforce the transferable OOP concepts that students will use in Java.
 
+### University Enrichment
+
+11. **Advanced OOP** (Python-Specific OOP Features)
 12. **Concurrent and Parallel Programming** (Performance Optimization)
 13. **Threading** (Concurrent Execution)
 14. **Multiprocessing** (Parallel Execution)
 15. **Asyncio** (Asynchronous Programming)
 
-Note: You can adjust this order based on your curriculum and student needs.
+These topics are optional extensions for students ready to research
+prerequisites and tackle longer projects.
 
 ## 🎯 Program Difficulty
 
-Each folder contains 6 programs that progressively increase in difficulty:
+Each folder contains 6 programs that increase in difficulty:
 - **Program 01**: Very simple - introduction to basic concepts
 - **Program 02**: Simple - basic practice with minor variations
 - **Program 03**: Moderate - combining multiple concepts
 - **Program 04**: Intermediate - more complex scenarios and applications
-- **Program 05**: Advanced - multi-step problems requiring deeper understanding
-- **Program 06**: Challenging - comprehensive applications that test mastery
+- **Program 05**: Extension - advanced, multi-step problem; may require
+  independent research
+- **Program 06**: University challenge - comprehensive application beyond the
+  standard AP CSP sequence
 - **BONUS TODOs**: Extra challenges for additional practice in each program
 
 ## 💡 Getting Help

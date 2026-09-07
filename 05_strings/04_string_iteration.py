@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice iterating through strings.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_05_strings
+# - Confirm each character in Python prints separately and Hello, World! has three vowels.
+# - Confirm "programming" has two m characters, the sentence has three spaces, and abc123xyz has three digits.
+# - Confirm doubling Python produces PPyytthhoonn and Secret123 reports a digit.
+
 # TODO 1: Create a string 'word' with the value "Python"
 # Use a for loop to print each character on a separate line
 # Write your code here:
@@ -70,4 +76,3 @@ Complete this program to practice iterating through strings.
 # Use a loop to verify if it's a palindrome (reads same forwards and backwards)
 # Compare each character from the start with its corresponding character from the end
 # Write your code here:
-

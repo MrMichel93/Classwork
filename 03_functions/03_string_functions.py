@@ -12,6 +12,12 @@ Instructions:
 Complete this program by creating functions that manipulate and analyze strings.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_03_functions
+# - Confirm make_uppercase("hello") returns "HELLO" and get_length("Python") returns 6.
+# - Confirm repeat_string("Python", 3) returns "PythonPythonPython".
+# - Confirm get_initials("John", "Doe") returns "J.D." and count_vowels("Python") returns 1.
+
 # TODO 1: Define a function called 'make_uppercase' that takes one parameter: text
 # It should return the text converted to uppercase
 # Hint: Use the .upper() method
@@ -74,4 +80,3 @@ Complete this program by creating functions that manipulate and analyze strings.
 # and returns the string reversed
 # Hint: You can use string slicing [::-1]
 # Write your code here:
-

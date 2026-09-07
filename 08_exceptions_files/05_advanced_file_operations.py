@@ -55,16 +55,15 @@ Complete this program exploring advanced file operations.
 # Write your code here:
 
 
-# TODO 6: Create a CSV file parser (without using csv module)
+# TODO 6: Create a CSV file parser using Python's csv module
 # Write data to 'data.csv':
 # name,age,city
 # Alice,25,NYC
 # Bob,30,LA
 # Parse it manually:
 # - Read each line
-# - Split by comma
-# - Create list of dictionaries
-# Handle quoted values that contain commas
+# - Use csv.DictReader to create a list of dictionaries
+# - Handle quoted values that contain commas correctly
 # Write your code here:
 
 
@@ -182,4 +181,3 @@ Complete this program exploring advanced file operations.
 # - Show differences between versions
 # Store metadata: timestamp, version number, change description
 # Write your code here:
-

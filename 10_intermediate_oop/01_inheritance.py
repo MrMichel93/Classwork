@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn about inheritance in OOP.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_10_intermediate_oop.IntermediateOOPSelfChecks.test_inheritance
+# Expect: a Dog is an Animal; Dog keeps its name and species; Car has honk();
+# Motorcycle has rev_engine().
+
 # TODO 1: Define a parent class called 'Animal'
 # Add an __init__ method that takes 'name' and 'species'
 # Store them as instance attributes
@@ -84,4 +89,3 @@ Complete this program to learn about inheritance in OOP.
 # Example: Vehicle -> ElectricVehicle -> TeslaCar
 # Each level should add new methods or attributes
 # Write your code here:
-

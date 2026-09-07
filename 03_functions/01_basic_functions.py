@@ -13,6 +13,12 @@ Instructions:
 Complete this program by creating and calling various functions.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_03_functions
+# - Confirm greet prints "Hello, World!" and greet_person prints the supplied name.
+# - Confirm add_numbers(5, 3), multiply(4, 6), and calculate_area(10, 5) return 8, 24, and 50.
+# - Confirm is_even returns True for 8 and False for an odd number.
+
 # TODO 1: Define a function called 'greet' that takes no parameters
 # It should print "Hello, World!"
 # Write your code here:
@@ -70,4 +76,3 @@ Complete this program by creating and calling various functions.
 # base and exponent, with exponent having a default value of 2
 # It should return base raised to the power of exponent
 # Write your code here:
-

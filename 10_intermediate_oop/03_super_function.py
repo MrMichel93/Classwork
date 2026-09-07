@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn about the super() function.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_10_intermediate_oop.IntermediateOOPSelfChecks.test_super_function
+# Expect: Student is a Person; ElectricCar keeps battery capacity; depositing $50
+# into $100 SavingsAccount leaves a $151.50 balance after interest.
+
 # TODO 1: Define a parent class 'Person' with:
 # - __init__ taking name and age
 # - method 'introduce' that prints "Hi, I'm {name}, {age} years old"
@@ -91,4 +96,3 @@ Complete this program to learn about the super() function.
 # Example: Animal -> Mammal -> Dog
 # Each level adds more specific behavior while calling parent methods
 # Write your code here:
-

@@ -12,6 +12,12 @@ Instructions:
 Complete this program to calculate areas and perimeters of different shapes.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_01_variables_expressions_statements
+# - Confirm the 10.5 by 6.2 rectangle has area 65.1 and perimeter 33.4.
+# - Confirm a radius-5 circle has area 78.53975 and circumference 31.4159.
+# - Confirm the 8 by 6 triangle has area 24.0.
+
 # For circles, we need pi. We'll define it as a variable.
 # TODO 1: Create a variable 'pi' and set it to 3.14159
 # Write your code here:
@@ -76,4 +82,3 @@ Complete this program to calculate areas and perimeters of different shapes.
 # BONUS TODO: A square has a side length of 7. Calculate and print both
 # its area and perimeter using a single variable for the side length.
 # Write your code here:
-

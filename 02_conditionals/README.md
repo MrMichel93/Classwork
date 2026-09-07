@@ -466,7 +466,7 @@ Apply these concepts in the following programs:
    - Apply age-based rules
    - Create age range checks
 
-3. **02_number_comparator.py** - Compare and analyze numbers
+3. **03_number_comparator.py** - Compare and analyze numbers
    - Determine relationships between numbers
    - Practice nested if statements
    - Use comparison operators (==, !=, >, <)

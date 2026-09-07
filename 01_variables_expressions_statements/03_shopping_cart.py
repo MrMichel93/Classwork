@@ -14,6 +14,12 @@ Complete this shopping cart calculator that computes the total cost
 of items including tax.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_01_variables_expressions_statements
+# - Confirm the three prices total $48.24 before tax.
+# - Confirm 8% tax produces a total of $52.0992 and leaves $7.9008 from $60.
+# - Change one item price and verify subtotal, tax, total, and money left all change.
+
 # TODO 1: Create variables for three item prices
 # item1_price = 15.99 (book)
 # item2_price = 23.50 (shirt)
@@ -62,4 +68,3 @@ of items including tax.
 # BONUS TODO: If you buy 2 of item1, 1 of item2, and 3 of item3,
 # calculate and print the new total with tax
 # Write your code here:
-

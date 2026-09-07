@@ -13,6 +13,11 @@ Instructions:
 Complete this program exploring composition and aggregation patterns.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_09_basic_oop.BasicOOPSelfChecks.test_composition_aggregation
+# Expect: a full address includes its city; a 3-credit course adds 3 credits;
+# starting a car starts its engine.
+
 # TODO 1: Create an Address class
 # Attributes: street, city, state, zip_code
 # Method: get_full_address() that returns formatted address
@@ -171,4 +176,3 @@ Complete this program exploring composition and aggregation patterns.
 # - Find students by major
 # This demonstrates complex composition!
 # Write your code here:
-

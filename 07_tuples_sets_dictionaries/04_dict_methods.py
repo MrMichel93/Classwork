@@ -12,6 +12,12 @@ Instructions:
 Complete this program to practice advanced dictionary operations.
 """
 
+# Student Self-Check
+# Run: python -m unittest starter_tests.test_07_tuples_sets_dictionaries
+# - Confirm keys, values, and item pairs print for the initial inventory.
+# - Confirm the item loop includes "Item: apples, Quantity: 50" and popping bananas returns 30.
+# - Confirm update adds grapes and pears, setdefault adds mangoes as 0, and backup clears to {}.
+
 # TODO 1: Create a dictionary called 'inventory' with:
 # "apples": 50, "bananas": 30, "oranges": 40
 # Write your code here:
@@ -86,4 +92,3 @@ Complete this program to practice advanced dictionary operations.
 # List 2 (values): ["Alice", 25, "Boston"]
 # Hint: dict(zip(keys, values))
 # Write your code here:
-

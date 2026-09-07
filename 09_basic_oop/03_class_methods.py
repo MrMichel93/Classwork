@@ -12,6 +12,11 @@ Instructions:
 Complete this program to learn about class methods.
 """
 
+# Student Self-Check
+# Run: python3 -m unittest starter_tests.test_09_basic_oop.BasicOOPSelfChecks.test_class_methods
+# Expect: add(10) then subtract(3) gives 7; a radius-5 circle has area 78.53975;
+# incrementing a new Counter once makes its count 1.
+
 # TODO 1: Define a class 'Calculator' with an __init__ method
 # Initialize an instance attribute 'result' to 0
 # Write your code here:
@@ -90,4 +95,3 @@ Complete this program to learn about class methods.
 # Add methods to convert to Fahrenheit and Kelvin
 # Create an instance and test the conversion methods
 # Write your code here:
-
